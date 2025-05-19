@@ -295,13 +295,13 @@ const GardenMaintance = () => {
             <div className='w-full lg:w-3/12 grid md:gap-5 lg:gap-5 xl:gap-10'>
                 {/* 1st 1st section */}
                 <div className='grid gap-6 lg:gap-[6px] xl:gap-[10px] justify-center items-center'>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-12 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Educational Workshops & Awareness</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-12 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Garden Maintenance</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-12 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Planning & Consulting</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-12 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Vatika Creations</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-12 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Custom Garden Solutions</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-12 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Miyawaki Forest Development</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-12 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Plantation & Sales</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Educational Workshops & Awareness</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Garden Maintenance</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Planning & Consulting</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Vatika Creations</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Custom Garden Solutions</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Miyawaki Forest Development</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Plantation & Sales</h1>
                 </div>
                 {/*1st 2nd section*/}
                 <div className='bg-cover bg-center lg:h-[516px] ' style={{backgroundImage:`url(${image_98})`}}>
@@ -410,9 +410,9 @@ const GardenMaintance = () => {
 
 
         {/* 3rd Section */}
-        <div className='md:px-8 lg:px-12 xl:px-20 w-full flex gap-10'>
-            {/* 1st  */}
-            <div className='md:w-6/6 lg:w-4/12'>
+        {/* <div className='md:px-8 lg:px-12 xl:px-20 w-full flex flex-wrap lg:flex-nowrap gap-10'>
+            
+            <div className='md:w-1/2 lg:w-4/12 order-1'>
                 <h1 className='text-[#55833D] font-[Roboto] text-xl font-semibold'>Care Features</h1>
                 <h1 className='py-[20px] text-[#000] md:text-3xl lg:text-4xl xl:text-[44px] font-playfair'>Design with Distinction</h1>
                 <p className='mb-8 lg:mb-[78px] md:text-lg lg:text-xl font-[Roboto]'>Welcome to Garda. For 25 years, we have brought our signature design aesthetic to public and private gardens throughout New York City. 
@@ -423,9 +423,9 @@ const GardenMaintance = () => {
                 </button>
 
             </div>
-            {/* 2nd */}
-            <div className='md:w-6/6 lg:w-4/12 flex flex-col'>
-                {/*  */}
+            
+            <div className='md:w-1/2 lg:w-4/12 flex flex-col order-2'>
+                
                 <div className='md:mb-[20px] lg:mb-[40px] xl:mb-[90px]'>
                     <div className='p-[14px] bg-[#F6F2FA] w-[60px] rounded-r-[40px]'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -435,7 +435,7 @@ const GardenMaintance = () => {
                     <h1 className='md:py-3 xl:py-5 md:text-2xl lg:text-[28px] font-[Roboto] font-medium'>Variation Gardening</h1>
                     <h1 className='text-[#000] font-[Roboto] md:text-lg lg:text-xl'>Verdant foliage and native plants create a lush look for this landscape.</h1>
                 </div>
-                {/*  */}
+                
                 <div className=''>
                     <div className='p-[14px] bg-[#F6F2FA] w-[60px] rounded-r-[40px]'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -446,11 +446,57 @@ const GardenMaintance = () => {
                     <h1 className='text-[#000] font-[Roboto] md:text-lg lg:text-xl'>Professional landscaping requires creativity, a sense of design.</h1>
                 </div>
             </div>
-            {/* 3rd */}
-            <div className='md:w-12/12 lg:w-4/12'>
+            
+            <div className='md:w-12/12 lg:w-4/12 order-3'>
                 <img src={image_101} alt='image_101' className='lg:h-[500px] xl:h-auto'/>
             </div>
+        </div> */}
+
+        {/* 3rd Section */}
+        <div className='md:px-8 lg:px-12 xl:px-20 w-full flex flex-col lg:flex-row gap-10'>
+            {/* Row: 1st and 2nd Section side by side on md+ */}
+            <div className='flex flex-col md:flex-row md:gap-10'>
+                {/* 1st Section */}
+                <div className='w-full md:w-1/2 order-1'>
+                    <h1 className='text-[#55833D] font-[Roboto] text-xl font-semibold'>Care Features</h1>
+                    <h1 className='py-[20px] text-[#000] md:text-3xl lg:text-4xl xl:text-[44px] font-playfair'>Design with Distinction</h1>
+                    <p className='mb-8 lg:mb-[78px] md:text-lg lg:text-xl font-[Roboto]'>Welcome to Garda. For 25 years, we have brought our signature design aesthetic to public and private gardens throughout New York City. 
+                        Our goal is to increase the natural beauty of every landscape.
+                    </p>
+                    <button className='md:px-8 md:py-3 lg:py-4 border lg:border-solid lg:border-4 lg:border-b-8 md:bg-[#55833D] lg:border-[#55833D] md:rounded-[8px] lg:rounded-[100px] md:text-[#FFF] lg:text-[#212529] font-[Roboto] font-semibold lg:text-lg' onClick={handleClick}>
+                        Contact Us
+                    </button>       
+                </div>
+                {/* 2nd Section */}
+                <div className='w-full md:w-1/2 order-2'>
+                    {/*  */}
+                    <div className='md:mb-[20px] lg:mb-[40px] xl:mb-[90px]'>
+                        <div className='p-[14px] bg-[#F6F2FA] w-[60px] rounded-r-[40px]'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M20.1335 2.41309L16.3602 6.18642C15.3335 7.22642 15.3335 8.91975 16.3602 9.95975L18.2402 11.8398L12.1735 17.9064L8.41351 14.1331L6.52018 15.9998C-0.0798185 22.6664 4.66685 27.3331 4.66685 27.3331C4.66685 27.3331 9.33352 31.9998 16.0002 25.4531L17.8802 23.5731L14.1468 19.8398L20.2002 13.7864L22.0535 15.6398C23.0935 16.6664 24.7868 16.6664 25.8268 15.6398L29.6002 11.8664L20.1335 2.41309ZM23.9068 13.7064L22.0668 11.8664L20.1468 9.94642L18.2802 8.07975L20.1602 6.19975L25.8002 11.8398L23.9068 13.7064Z" fill="#55833D"/>
+                            </svg>
+                        </div>
+                        <h1 className='md:py-3 xl:py-5 md:text-2xl lg:text-[28px] font-[Roboto] font-medium'>Variation Gardening</h1>
+                        <h1 className='text-[#000] font-[Roboto] md:text-lg lg:text-xl'>Verdant foliage and native plants create a lush look for this landscape.</h1>
+                    </div>
+                    {/*  */}
+                    <div className=''>
+                        <div className='p-[14px] bg-[#F6F2FA] w-[60px] rounded-r-[40px]'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M18.6668 8L13.6668 14.6667L17.4668 19.7333L15.3335 21.3333C13.0802 18.3333 9.3335 13.3333 9.3335 13.3333L1.3335 24H30.6668L18.6668 8Z" fill="#55833D"/>
+                            </svg>
+                        </div>
+                        <h1 className='md:py-3 xl:py-5 md:text-2xl lg:text-[28px] font-[Roboto] font-medium'>Professional Landscaping</h1>
+                        <h1 className='text-[#000] font-[Roboto] md:text-lg lg:text-xl'>Professional landscaping requires creativity, a sense of design.</h1>         
+                    </div>                 
+                </div>
+            </div>
+            {/* 3rd Section - Full width below on all screens */}
+            <div className='w-full order-3'>
+                <img src={image_101} alt='image_101' className='w-full md:h-[600px] lg:h-[500px] xl:h-[550px]  object-cover object-center'/>
+            </div>
         </div>
+
 
 
 
