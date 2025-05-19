@@ -1,0 +1,25 @@
+
+
+
+.max-w-1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* In your index.css or tailwind.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+
+
