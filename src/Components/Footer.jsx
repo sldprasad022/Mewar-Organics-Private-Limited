@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <div className='mt-10 md:h-[780px] lg:h-[500px] xl:h-[500px] bg-cover bg-center ' style={{backgroundImage : `url(${footer})`}}>
         
-       <section className='md:grid md:grid-cols-2 md:py-10 md:px-8 md:gap-14  lg:flex  lg:justify-between lg:px-[100px] xl:px-[206px] pt-[40px] font-[Roboto]'>
+       <section className='grid grid-cols-1 md:grid-cols-2 p-4 md:py-10 md:px-8 gap-10 md:gap-14  lg:flex  lg:justify-between lg:px-[60px] xl:px-[206px] pt-[40px] font-[Roboto]'>
                 {/* 1st Section */}
-                <div className=' flex flex-col gap-5 lg:gap-8'>
+                <div className=' flex flex-col gap-3 md:gap-5 lg:gap-8'>
                     <img src={f1} alt='' className='w-[200px] h-[82px]'/>
                     <h1 className='text-[#FFFFFF] font-medium text-lg'>About Us</h1>
                     <p className='text-[#FFFFFF] text-base'>We Offer a Services Provides <br/>  Full & comprehensive services in <br/> irrigation, landscape, maintenance <br/> and professional tree care.</p>
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             {/* 2nd Section */}
             <div className='flex flex-col'>
-                <h1 className='text-lg text-[#FFF] mb-[40px] font-medium'>Quick Link</h1>
+                <h1 className='text-lg text-[#FFF] mb-3 md:mb-10 font-medium'>Quick Link</h1>
                 <div className='flex flex-col gap-5'>
                     <Link className='flex gap-[10px]' to='/'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
             {/* 3rd Section */}
             <div className='flex flex-col'>
-                <h1 className='text-[#FFF] text-lg md:mb-5 lg:mb-10 font-medium'>Contact Info</h1>
+                <h1 className='text-[#FFF] text-lg mb-3 md:mb-5 lg:mb-10 font-medium'>Contact Info</h1>
                 {/*  */}
                 <div className="flex items-center gap-3">
                     <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#55833D]">
@@ -108,7 +108,7 @@ const Footer = () => {
 
             {/* 4th Section */}
             <div className=''>
-                <h1 className='md:mb-5 lg:mb-10 text-lg text-white font-medium'>Solutions</h1>
+                <h1 className='mb-3 md:mb-5 lg:mb-10 text-lg text-white font-medium'>Solutions</h1>
                 <div className='flex flex-col gap-[20px]'>
                     <h1 className='text-white text-base'>Terms</h1>
                     <h1 className='text-white text-base'>Leader Ship</h1>

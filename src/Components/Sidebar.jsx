@@ -1,26 +1,27 @@
 import React from 'react'
 import image_89 from "../assets/image_89.png";
 import image_90 from "../assets/image_90.png";
+import { Link } from 'react-router-dom';
 
 
 const Sidebar = ({setSidebarOpen}) => {
   return (
-    <div className='md:w-[280px] lg:w-[294px] xl:w-[380px] px-[30px] py-[20px] flex flex-col gap-[50px] items-start bg-[#FFF]  h-full'>
+    <div className='w-[280px] lg:w-[294px] xl:w-[380px] px-[30px] py-[20px] flex flex-col gap-[50px] items-start bg-[#FFF]  h-full'>
         {/*  */}
-        <button className='' onClick={()=>setSidebarOpen(false)}>
+        <button className='hidden lg:block' onClick={()=>setSidebarOpen(false)}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
                     <path d="M27 4.5C39.4425 4.5 49.5 14.5575 49.5 27C49.5 39.4425 39.4425 49.5 27 49.5C14.5575 49.5 4.5 39.4425 4.5 27C4.5 14.5575 14.5575 4.5 27 4.5ZM35.0775 15.75L27 23.8275L18.9225 15.75L15.75 18.9225L23.8275 27L15.75 35.0775L18.9225 38.25L27 30.1725L35.0775 38.25L38.25 35.0775L30.1725 27L38.25 18.9225L35.0775 15.75Z" fill="#55833D"/>
                 </svg>
         </button>
         {/*  */}
-       <div className='flex flex-col gap-[20px]'>
-            <img src={image_89} alt='image_89' className='w-[160px] h-[60px]'/>
-            <p className='text-[#000] text-lg font-semibold font-playfair'>
+       <div className='flex flex-col  hidden lg:block'>
+            <img src={image_89} alt='image_89' className='w-[160px] h-[60px] mb-10'/>
+            <p className='text-[#000] text-lg font-semibold font-playfair '>
                 We take pride in customizing our services to meet the needs and budgets of each individual customer.
             </p>
        </div>
        {/*  */}
-        <div className='flex flex-col items-start  justify-center'>
+        <div className='flex flex-col items-start  justify-center hidden lg:block'>
            <h1 className='mb-[1px] text-[#000] text-[22px] font-playfair font-semibold '>Contact Us</h1> 
            {/* <div className='bg-[#55833D] border border-solid border-2 w-full h-[2px]'></div> */}
            <hr className='bg-[#55833D] w-full h-[2px] mb-[40px]'></hr>
@@ -63,13 +64,46 @@ const Sidebar = ({setSidebarOpen}) => {
                     </div>        
             </div>
 
+            {/* Tab Screen */}
+            <div className='flex block lg:hidden '>
+                <img src={image_89} alt='image_89' className='w-[160px] h-[60px]'/>
+                {/*  */}
+                <button className='flex lg:hidden' onClick={()=>setSidebarOpen(false)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                        <path d="M27 4.5C39.4425 4.5 49.5 14.5575 49.5 27C49.5 39.4425 39.4425 49.5 27 49.5C14.5575 49.5 4.5 39.4425 4.5 27C4.5 14.5575 14.5575 4.5 27 4.5ZM35.0775 15.75L27 23.8275L18.9225 15.75L15.75 18.9225L23.8275 27L15.75 35.0775L18.9225 38.25L27 30.1725L35.0775 38.25L38.25 35.0775L30.1725 27L38.25 18.9225L35.0775 15.75Z" fill="#55833D"/>
+                    </svg>
+                </button>
+            </div>
+
+
+            <div className='mt-20 flex flex-col w-full gap-5   block lg:hidden'>
+                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2' to='/'>
+                    <h1 className='font-medium' >Home</h1>
+                </Link>
+                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 ' to='/aboutus'>
+                    <h1 className='font-medium' >About</h1>
+                </Link>
+                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 ' to='/services'>
+                    <h1 className='font-medium' >Services</h1>
+                </Link>
+                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 ' to='/portfolio'>
+                    <h1 className='font-medium' >Portfolio</h1>
+                </Link>
+                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 '  to='/categeories'>
+                    <h1 className='font-medium'>Categories</h1>
+                </Link>
+                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 ' to='/contact'>
+                    <h1 className='font-medium' >Contact</h1>
+                </Link>
+            </div>
+
 
             {/*  */}
             <div className=' h-[290px] w-[320px] relative bg-cover bg-center ' style={{backgroundImage:`url(${image_90})`}}>
                 <section className='flex flex-col '>
                     <h1 className='text-[#000] text-[22px] font-playfair font-semibold '>Follow Us on :</h1>
-                    <hr className='bg-[#55833D] w-full h-[2px] mb-[20px]'></hr>
-                    <div className='flex gap-[20px]'>
+                    <hr className='bg-[#55833D] w-[70%] lg:w-full h-[2px] mb-[20px]'></hr>
+                    <div className='flex gap-8 lg:gap-5'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28004 9.09 5.11004 7.38 3.00004 4.79C2.63004 5.42 2.42004 6.16 2.42004 6.94C2.42004 8.43 3.17004 9.75 4.33004 10.5C3.62004 10.5 2.96004 10.3 2.38004 10C2.38004 10 2.38004 10 2.38004 10.03C2.38004 12.11 3.86004 13.85 5.82004 14.24C5.46004 14.34 5.08004 14.39 4.69004 14.39C4.42004 14.39 4.15004 14.36 3.89004 14.31C4.43004 16 6.00004 17.26 7.89004 17.29C6.43004 18.45 4.58004 19.13 2.56004 19.13C2.22004 19.13 1.88004 19.11 1.54004 19.07C3.44004 20.29 5.70004 21 8.12004 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" fill="#55833D"/>
                         </svg>

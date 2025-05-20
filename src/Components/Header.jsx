@@ -38,14 +38,13 @@ const handleContact = ()=>{
 
   return (
       <>
-        <div className="flex w-full h-[100px]  justify-between md:px-8 xl:px-20">
+        <div className="flex w-full h-[50px] md:h-[100px]  justify-between px-4 md:px-8 xl:px-20">
               {/*  */}
-              <
-                div className="my-[15px]">
+              <div className="my-3 md:my-[15px]">
                 <img
                   src={mewarlogo}
                   alt="mewarlogo"
-                  className="md:h-[60px] lg:h-[70px] object-cover"
+                  className="h-[35px] md:h-[60px] lg:h-[70px] object-cover"
                 />
               </div>
                 {/*  */}
