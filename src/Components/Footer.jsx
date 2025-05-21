@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='mt-10 md:h-[780px] lg:h-[500px] xl:h-[500px] bg-cover bg-center ' style={{backgroundImage : `url(${footer})`}}>
+    <div className='mt-10 h-[1250px] md:h-[780px] lg:h-[550px] xl:h-[550px] bg-cover bg-center ' style={{backgroundImage : `url(${footer})`}}>
         
        <section className='grid grid-cols-1 md:grid-cols-2 p-4 md:py-10 md:px-8 gap-10 md:gap-14  lg:flex  lg:justify-between lg:px-[60px] xl:px-[206px] pt-[40px] font-[Roboto]'>
                 {/* 1st Section */}
@@ -120,7 +120,7 @@ const Footer = () => {
    
         </section>
 
-        <section className='md:mt-5 lg:mt-[70px] font-[Roboto]'>
+        <section className='mt-5 md:mt-5 lg:mt-[70px] font-[Roboto] w-[280px] md:w-auto mx-auto md:mx-0'>
             <h1 className='text-center text-[#fff]'>2025 Mewar Organics Private Limited. All rights reserved</h1>
         </section>
     </div>

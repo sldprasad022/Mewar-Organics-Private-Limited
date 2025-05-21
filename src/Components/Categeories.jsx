@@ -170,18 +170,18 @@ const Categeories = () => {
 //---------------------------------------------Animation Logic-----------------------------------------------------------------
 
   return (
-    <div className="flex flex-col md:gap-8 lg:gap-8  xl:gap-14">
+    <div className="flex flex-col gap-6 md:gap-8 lg:gap-8  xl:gap-14">
       {/* 1st Section */}
-      <div className="bg-cover bg-center md:h-[500px] lg:h-[460px] xl:h-[500px] relative" style={{ backgroundImage: `url(${image_58})` }}>
+      <div className="bg-cover bg-center h-[380px] md:h-[500px] lg:h-[460px] xl:h-[500px] relative" style={{ backgroundImage: `url(${image_58})` }}>
         <div className="absolute inset-0 bg-stone-900 opacity-50 z-0"></div>
         {/* section */}
-        <section className="relative  pt-[303px]  flex flex-col justify-center items-center">
-          <h1 className="text-[#FFF] text-4xl mb-[40px] font-semibold font-playfair">
+        <section className="relative pt-[210px] md:pt-[303px]  flex flex-col justify-center items-center">
+          <h1 className="text-[#FFF] text-2xl md:text-4xl  mb-[40px] font-semibold font-playfair">
             Explore Our Plant Collections
           </h1>
           <div className="flex items-center gap-[2px]">
             <Link
-              className="text-[#FFF] text-2xl font-semibold font-[Roboto]"
+              className="text-[#FFF] text-xl md:text-2xl font-semibold font-[Roboto]"
               to="/"
             >
               Home
@@ -207,7 +207,7 @@ const Categeories = () => {
                 </clipPath>
               </defs>
             </svg>
-            <h1 className="text-[#FFF] text-2xl font-semibold font-[Roboto]">
+            <h1 className="text-[#FFF] text-xl md:text-2xl font-semibold font-[Roboto]">
               Category
             </h1>
           </div>
@@ -224,21 +224,21 @@ const Categeories = () => {
       </h1>
 
       {/*  */}
-      <div className="md:px-8 lg:px-12 xl:px-20 ">
-        <h1 className="md:text-3xl lg:text-4xl text-center mb-8">
+      <div className="px-4 md:px-8 lg:px-12 xl:px-20 ">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl text-center mb-2 md:mb-8">
           Forest & Native Plants
         </h1>
-        <div className="w-full flex flex-col-reverse lg:flex-row gap-8 lg:gap-10 xl:gap-20">
+        <div className="w-full flex flex-col md:flex-col-reverse lg:flex-row gap-4 md:gap-8 lg:gap-10 xl:gap-20">
           {/* 1st */}
           <div className="w-full lg:w-1/2 ">
-            <p className="md:text-lg xl:text-xl font-[Roboto] text-[#212529] md:mb-4 lg:mb-6 xl:mb-7">
+            <p className="text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529] mb-2 md:mb-4 lg:mb-6 xl:mb-7">
               Our Forest and Native Plants collection offers over 150+ varieties
               that play a crucial role in promoting biodiversity, air
               purification, and ecological restoration. These plants are ideal
               for afforestation, rewilding, and sustainable landscaping
               projects. Some of our key forest and native species include:
             </p>
-            <ol className="md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+            <ol className="text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
               <li>
                 1.Neem (<i>Azadirachta indica</i>)
               </li>
@@ -280,16 +280,16 @@ const Categeories = () => {
           <div className="w-full lg:w-1/2">
             <div className="grid  lg:grid-rows-3 grid-cols-2 gap-2">
               <div className="row-span-1 row-span-2">
-                <img src={image_59} alt="image_59" className="h-[300px] lg:h-[370px] w-full"/>
+                <img src={image_59} alt="image_59" className="md:h-[300px] lg:h-[370px] w-full"/>
               </div>   
               <div className="row-start-1 col-start-2">
-                <img src={image_60} alt="" className="h-[200px] lg:h-[181px] w-full" />
+                <img src={image_60} alt="" className="md:h-[200px] lg:h-[181px] w-full" />
               </div>
               <div className="row-span-1">
-                <img src={image_61} alt="" className="h-[200px] lg:h-[181px] w-full" />
+                <img src={image_61} alt="" className="md:h-[200px] lg:h-[181px] w-full" />
               </div>
               <div className="row-span-2 col-start-2 row-start-2">
-                <img src={image_62} alt="" className="h-[300px] lg:h-[370px] w-full" />
+                <img src={image_62} alt="" className="md:h-[300px] lg:h-[370px] w-full" />
               </div>
             </div>
           </div>
@@ -297,67 +297,67 @@ const Categeories = () => {
       </div>
 
       {/* 3rd Section */}
-      <div className="md:px-8 lg:px-12 xl:px-20  w-full flex flex-col lg:flex-row gap-6 lg:gap-10 xl:gap-20">
+      <div className="px-4 md:px-8 lg:px-12 xl:px-20  w-full flex flex-col-reverse md:flex-col lg:flex-row gap-6 lg:gap-10 xl:gap-20">
         {/* 1st */}
         <div className="w-full lg:w-1/2 ">
           <div className="grid  grid-rows-3 grid-cols-2 gap-2">
             <div className="row-span-2">
-              <img src={image_63} alt="image_63" className="h-[300px] lg:h-[416px]  xl:h-[406px] w-full" />
+              <img src={image_63} alt="image_63" className="h-[200px] md:h-[300px] lg:h-[416px]  xl:h-[406px] w-full" />
             </div>
             <div className="row-start-1 col-start-2">
-              <img src={image_64} alt="image_64" className="h-[146px] lg:h-[204px] xl:h-[198px] w-full" />
+              <img src={image_64} alt="image_64" className="h-[96px] md:h-[146px] lg:h-[204px] xl:h-[198px] w-full" />
             </div>
             <div className="row-span-1">
-              <img src={image_65} alt="image_65" className="h-[146px] lg:h-[204px] xl:h-[198px] w-full" />
+              <img src={image_65} alt="image_65" className="h-[96px] md:h-[146px] lg:h-[204px] xl:h-[198px] w-full" />
             </div>
             <div className="row-start-2 col-start-2 row-span-2">
-              <img src={image_66} alt="image_66" className="h-[300px] lg:h-[416px] xl:h-[406px] w-full" />
+              <img src={image_66} alt="image_66" className="h-[200px] md:h-[300px] lg:h-[416px] xl:h-[406px] w-full" />
             </div>
           </div>
         </div>
         {/* 2nd */}
-        <div className="w-full lg:w-1/2 flex flex-col md:gap-3 lg:gap-5 xl:gap-8">
-          <ol className="md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+        <div className="w-full lg:w-1/2 flex flex-col gap-2 md:gap-3 lg:gap-5 xl:gap-8">
+          <ol className="text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
             <li>
-              14.Khair (<i> Acacia catechu</i>)
+              14.Khair (<i>Acacia catechu</i>)
             </li>
             <li>
               {" "}
-              15.Belpatra (<i> Aegle marmelos</i>)
+              15.Belpatra (<i>Aegle marmelos</i>)
             </li>
             <li>
-              16. Saptaparni (<i> Alstonia scholaris</i>)
-            </li>
-            <li>
-              {" "}
-              17. Shami Tree (<i> Prosopis cineraria</i>)
+              16. Saptaparni (<i>Alstonia scholaris</i>)
             </li>
             <li>
               {" "}
-              18. Chandan (<i> Santalum album</i>)
-            </li>
-            <li>
-              19. Mahua (<i> Madhuca indica</i>)
+              17. Shami Tree (<i>Prosopis cineraria</i>)
             </li>
             <li>
               {" "}
-              20. Nagkesar (<i> Mesua ferrea</i>)
+              18. Chandan (<i>Santalum album</i>)
+            </li>
+            <li>
+              19. Mahua (<i>Madhuca indica</i>)
             </li>
             <li>
               {" "}
-              21. Karanj (<i> Pongamia pinnata</i>)
+              20. Nagkesar (<i>Mesua ferrea</i>)
             </li>
             <li>
               {" "}
-              22. Shisham (<i> Dalbergia sissoo</i>)
+              21. Karanj (<i>Pongamia pinnata</i>)
             </li>
             <li>
               {" "}
-              23. Bargad (<i> Ficus benghalensis</i>)
+              22. Shisham (<i>Dalbergia sissoo</i>)
             </li>
             <li>
               {" "}
-              24. Rudraksha Tree(<i> Elaeocarpus ganitrus</i>)
+              23. Bargad (<i>Ficus benghalensis</i>)
+            </li>
+            <li>
+              {" "}
+              24. Rudraksha Tree(<i>Elaeocarpus ganitrus</i>)
             </li>
             <li>
               {" "}
@@ -385,7 +385,7 @@ const Categeories = () => {
             </li>
           </ol>
 
-          <p className="md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+          <p className="text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
             These plants are carefully selected for their environmental benefits
             and cultural significance, making them ideal for Miyawaki forests,
             Panchvati Vatikas, and spiritual gardens, ensuring long-term
@@ -395,12 +395,12 @@ const Categeories = () => {
       </div>
 
       {/* 4th Section Fruit Plants */}
-      <div className="md:px-8 lg:px-12 xl:px-20 ">
-        <h1 className="text-center md:text-3xl lg:text-4xl font-playfair mb-8">Fruits Plants</h1>
-        <div className="flex flex-col-reverse lg:flex-row w-full md:gap-6 lg:gap-10 xl:gap-20">
+      <div className="px-4 md:px-8 lg:px-12 xl:px-20 ">
+        <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-playfair mb-8">Fruits Plants</h1>
+        <div className="flex flex-col-reverse lg:flex-row w-full gap-4 md:gap-6 lg:gap-10 xl:gap-20">
           {/* 1st */}
-          <motion.div className="w-full lg:w-1/2 flex flex-col md:gap-3 lg:gap-5 xl:gap-7" variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
-            <p className="md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+          <motion.div className="w-full lg:w-1/2 flex flex-col gap-3 md:gap-3 lg:gap-5 xl:gap-7" variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
+            <p className="text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
               Our Fruit Plants collection is over 120+ high-quality, organically
               nurtured fruit varieties, grown without the use of chemicals,
               ensuring purity, safety, and superior nutritional value. These
@@ -409,7 +409,7 @@ const Categeories = () => {
               methods, making them ideal for health-conscious growers and
               eco-friendly farming projects.
             </p>
-            <ol className="md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+            <ol className="text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
               <li>
                 1.Mango (<i>Miyazaki, R2E2, Katiman, Red Palmer, Thai Mango – Namdocmai</i>)
               </li>
@@ -451,16 +451,16 @@ const Categeories = () => {
           <motion.div className="w-full lg:w-1/2" variants={rightSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
               <div className="grid grid-rows-3 grid-cols-2 gap-2">
                   <div className="row-span-2">
-                    <img src={image_67} alt='image_67' className="h-[300px] lg:h-[442px] xl:h-[414px] w-full"/>
+                    <img src={image_67} alt='image_67' className="h-[264px] md:h-[300px] lg:h-[442px] xl:h-[414px] w-full"/>
                   </div>
                   <div className="row-start-1 col-start-2">
-                    <img src={image_68} alt='image_68' className="h-[146px] lg:h-[216px] xl:h-[203px] w-full"/>
+                    <img src={image_68} alt='image_68' className="h-[128px] md:h-[146px] lg:h-[216px] xl:h-[203px] w-full"/>
                   </div>
                   <div className="row-span-1">
-                    <img src={image_69} alt='image_69' className="h-[146px] lg:h-[216px] xl:h-[203px] w-full"/>
+                    <img src={image_69} alt='image_69' className="h-[128px] md:h-[146px] lg:h-[216px] xl:h-[203px] w-full"/>
                   </div>
                   <div className="row-start-2 col-start-2 row-span-2">
-                    <img src={image_70} alt='' className="h-[300px] lg:h-[442px] xl:h-[414px] w-full"/>
+                    <img src={image_70} alt='' className="h-[264px] md:h-[300px] lg:h-[442px] xl:h-[414px] w-full"/>
                   </div>
               </div>
           </motion.div>
@@ -469,27 +469,27 @@ const Categeories = () => {
       </div>
 
       {/* 5th Section */}
-      <div className="md:px-8 lg:px-12 xl:px-20  w-full flex flex-col lg:flex-row md:gap-6 lg:gap-10 xl:gap-20">
+      <div className="px-4 md:px-8 lg:px-12 xl:px-20  w-full flex flex-col lg:flex-row gap-4 md:gap-6 lg:gap-10 xl:gap-20">
           {/* 1st */}
           <div className="w-full lg:w-1/2">
               <div className="grid grid-rows-3 grid-cols-2 gap-2">
                   <div className="row-span-2">
-                      <img src={image_71} alt='image_71' className="md:h-[400px] lg:h-[492px]  xl:h-[480px] w-full"/>
+                      <img src={image_71} alt='image_71' className="h-[264px] md:h-[400px] lg:h-[492px]  xl:h-[480px] w-full"/>
                   </div>
                    <div className="row-start-1 col-start-2">
-                      <img src={image_72} alt='image_72' className="md:h-[196px] lg:h-[242px] xl:h-[234px] w-full"/>
+                      <img src={image_72} alt='image_72' className="h-[128px] md:h-[196px] lg:h-[242px] xl:h-[234px] w-full"/>
                   </div>
                   <div className="row-span-1">
-                      <img src={image_73} alt='image_73' className="md:h-[196px] lg:h-[242px] xl:h-[234px] w-full"/>
+                      <img src={image_73} alt='image_73' className="h-[128px] md:h-[196px] lg:h-[242px] xl:h-[234px] w-full"/>
                   </div>
                   <div className="row-span-2 row-start-2 col-start-2">
-                      <img src={image_74} alt='image_74' className="md:h-[400px] lg:h-[492px] xl:h-[480px] w-full"/>
+                      <img src={image_74} alt='image_74' className="h-[264px] md:h-[400px] lg:h-[492px] xl:h-[480px] w-full"/>
                   </div>
               </div>
           </div>
           {/* 2nd */}
-          <div className="w-full lg:w-1/2 flex flex-col md:gap-3 lg:gap-5 xl:gap-7">
-                <ol className="md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+          <div className="w-full lg:w-1/2 flex flex-col gap-2 md:gap-3 lg:gap-5 xl:gap-7">
+                <ol className="text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
                   <li>14.Jackfruit (<i>Red Jackfruit, Pink Jackfruit, Malabar Red Grafted Jackfruit</i>)</li>
                   <li> 15.Star Fruit (<i>Averrhoa carambola</i>)</li>
                   <li> 16.Fig  (<i>Ficus carica</i>)</li>
@@ -508,7 +508,7 @@ const Categeories = () => {
                   <li>  29.Wood Apple (<i>Limonia acidissima</i>)</li>
                   <li>  30.Bael (<i>Aegle marmelos</i>)</li>
                 </ol>
-                <p className="md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+                <p className="text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
                     These zero-chemical, organically cultivated fruit plants ensure
                     safer, healthier produce with enhanced taste and nutrient
                     content. Perfect for kitchen gardens, organic farms, food forests,
@@ -522,15 +522,15 @@ const Categeories = () => {
 
 
       {/* 6th Section */}
-      <div className="md:px-8 lg:px-12 xl:px-20 ">
-          <h1 className="text-center text-4xl font-semibold font-playfair mb-8">Flower Plants</h1>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="px-8 md:px-8 lg:px-12 xl:px-20 ">
+          <h1 className="text-center text-2xl md:text-4xl font-semibold font-playfair mb-2 md:mb-8">Flower Plants</h1>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
               {
                 flowerPlantsDataList.map((eachObject,index)=>(
                   <div key={index} className="flex flex-col  text-center p-4  shadow-lg rounded-2xl">
                         <img src={eachObject.imageUrl} alt='image' className=""/>
                         {/* <h1 className="my-4 text-lg font-medium font-[Roboto]">{eachObject.title}</h1> */}
-                        <h1 className="md:my-3 xl:my-4 md:text-base xl:text-lg font-semibold font-[Roboto]">
+                        <h1 className=" my-2 md:my-3 xl:my-4  md:text-base xl:text-lg font-semibold font-[Roboto]">
                             {eachObject.title.split('(')[0]}
                             {eachObject.title.includes('(') && (
                               <span className="block ">
@@ -546,7 +546,7 @@ const Categeories = () => {
 
       </div>
 
-      <p className="md:px-8 lg:px-12 xl:px-20 md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+      <p className="px-4 md:px-8 lg:px-12 xl:px-20 text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
       Our Flower Plants collection at Mewar Organics offers over 60+ rare, exotic, and native varieties, each cultivated with zero
       chemicals to ensure natural beauty, sustainability, and pollinator support. From vibrant ornamental blooms to sacred and
       spiritually significant flowers, these plants are ideal for Nakshatra Vatikas, Butterfly Gardens, Terrace Gardens, and eco-friendly
@@ -555,30 +555,30 @@ const Categeories = () => {
       </p>
 
       {/*  */}
-      <div className="md:px-8 lg:px-12 xl:px-20  flex flex-col lg:flex-row gap-12 w-full">
+      <div className="px-4 md:px-8 lg:px-12 xl:px-20  flex flex-col lg:flex-row gap-6 md:gap-12 w-full">
         {/* 1st */}
-        <div className="w-full lg:w-1/2 grid grid-cols-3 gap-5">
-            <img src={image_75} alt='image_75' className="h-[200px] lg:h-[242px] w-[266px]"/>
-            <img src={image_76} alt='image_76' className="h-[200px] lg:h-[242px] w-[266px]"/>
-            <img src={image_77} alt='image_77' className="h-[200px] lg:h-[242px] w-[266px]"/>
-            <img src={image_78} alt='image_78' className="h-[200px] lg:h-[242px] w-[266px]"/>
-            <img src={image_79} alt='image_79' className="h-[200px] lg:h-[242px] w-[266px]"/>
-            <img src={image_80} alt='image_80' className="h-[200px] lg:h-[242px] w-[266px]"/>
-            <img src={image_81} alt='image_81' className="h-[200px] lg:h-[242px] w-[266px]"/>
-            <img src={image_82} alt='image_82' className="h-[200px] lg:h-[242px] w-[266px]"/>
-            <img src={image_83} alt='image_83' className="h-[200px] lg:h-[242px] w-[266px]"/>
+        <div className="w-full lg:w-1/2 grid grid-cols-3 gap-5 md:gap-5">
+            <img src={image_75} alt='image_75' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_76} alt='image_76' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_77} alt='image_77' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_78} alt='image_78' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_79} alt='image_79' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_80} alt='image_80' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_81} alt='image_81' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_82} alt='image_82' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_83} alt='image_83' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
         </div>
         {/* 2nd */}
         <div className="flex flex-col w-full lg:w-1/2">
-            <h1 className="md:text-3xl lg:text-4xl font-playfair font-semibold">Our Collection</h1>
-            <p className="md:my-3 lg:my-5 xl:my-7 md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-playfair font-semibold">Our Collection</h1>
+            <p className="my-2 md:my-3 lg:my-5 xl:my-7 text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
                 Our landscaping collection features over 80+ varieties of
                 premium plants, ranging from lush tropical greens to rare
                 and exotic species. These plants are perfect for creating
                 vibrant, sustainable, and visually stunning landscapes that
                 thrive in diverse environments.
             </p>
-            <ol className="md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
+            <ol className="text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]">
                     <li>1.Monstera</li>
                     <li> 2.Alocasia</li>
                     <li> 3.Philodendron</li>
@@ -598,7 +598,7 @@ const Categeories = () => {
                     <li> 17.Peperomia argyreia</li>
                     <li> 18.Ficus elastica</li>
                     <li>19.Thai Constellation Monstera</li>
-                    <li> 20.Ensete ventricosum ‘Maurelii’</li>
+                    <li> 20.Ensete ventricosum ‘Maurelii’.</li>
             </ol>
         </div>
       </div>
@@ -609,13 +609,13 @@ const Categeories = () => {
       {/*  */}
       <div className="bg-cover bg-center h-[400px]  bg-stone-900 opacity-100 relative" style={{backgroundImage:`url(${image_84})`}} >
           <div className="absolute inset-0 bg-stone-900 opacity-50 z-0"></div>
-            <section className="flex flex-col justify-center items-center  h-full w-full  z-10 relative">
+            <section className="flex flex-col justify-center items-center text-center px-20 md:px-0  h-full w-full  z-10 relative">
                 <div className=" flex flex-col  gap-3 ">
-                  <h1 className="text-[#fff] md:text-2xl md:text-3xl font-semibold font-playfair">Find the Perfect Organic Plant for Your Home & Garden!</h1>
+                  <h1 className="text-[#fff] text-xl md:text-2xl md:text-3xl font-semibold font-playfair">Find the Perfect Organic Plant for Your Home & Garden!</h1>
                   <h1 className="text-[#fff] text-lg font-medium font-[Roboto]  text-center">Let’s make gardening easy! Choose from our wide range of native, <br/> forest, medicinal, and ornamental plants</h1>
               </div>
               <div className="mt-4">
-                  <button className="bg-[#55833D] md:px-5 lg:px-8 md:py-3 lg:py-5 text-white text-base lg:text-lg font-semibold font-[Roboto] rounded-lg hover:text-black hover:bg-white">
+                  <button className="bg-[#55833D] p-3 md:px-5 lg:px-8 md:py-3 lg:py-5 text-white text-base lg:text-lg font-semibold font-[Roboto] rounded-lg hover:text-black hover:bg-white">
                       Talk to a Plant Expert
                   </button>    
               </div>

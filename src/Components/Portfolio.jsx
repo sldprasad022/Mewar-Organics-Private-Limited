@@ -37,17 +37,17 @@ const Portfolio = () => {
 
 
   return (
-    <div className="flex flex-col md:gap-8 lg:gap-8  xl:gap-14">
+    <div className="flex flex-col gap-6 md:gap-8 lg:gap-8  xl:gap-14">
       {/*  */}
-      <div className="bg-cover bg-center  md:h-[500px] lg:h-[460px]  xl:h-[500px] relative" style={{ backgroundImage: `url(${image_53})` }}>
+      <div className="bg-cover bg-center h-[380px]  md:h-[500px] lg:h-[460px]  xl:h-[500px] relative" style={{ backgroundImage: `url(${image_53})` }}>
           <div className="absolute inset-0 bg-stone-800 opacity-50 z-0"></div>
         {/*  */}
-        <section className="relative z-10 pt-[310px] flex flex-col justify-center items-center">
-          <h1 className="text-4xl text-[#FFF] mb-[40px] font-semibold font-playfair">
+        <section className="relative z-10 pt-[240px] md:pt-[310px] flex flex-col justify-center items-center">
+          <h1 className="text-3xl md:text-4xl text-[#FFF] mb-[40px] font-semibold font-playfair">
             Portfolio
           </h1>
           <div className="flex items-center gap-1">
-            <Link className="text-[#FFF] text-2xl font-semibold font-[Roboto]" to='/'>
+            <Link className="text-[#FFF] text-xl md:text-2xl font-semibold font-[Roboto]" to='/'>
               Home
             </Link>
             <svg
@@ -71,7 +71,7 @@ const Portfolio = () => {
                 </clipPath>
               </defs>
             </svg>
-            <h1 className="text-[#FFF] text-2xl font-semibold font-[Roboto]">
+            <h1 className="text-[#FFF] text-xl md:text-2xl font-semibold font-[Roboto]">
               Portfolio
             </h1>
           </div>
@@ -83,29 +83,29 @@ const Portfolio = () => {
       </div>
 
       {/* 2nd */}
-      <div className="md:px-8 lg:px-12 xl:px-20 overflow-hidden">
-        <h1 className="text-center md:text-3xl lg:text-4xl font-playfair md:font-semibold lg:font-medium mb-2">
+      <div className="px-4 md:px-8 lg:px-12 xl:px-20 overflow-hidden">
+        <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-playfair md:font-semibold lg:font-medium mb-2">
           Our Projects
         </h1>
-        <h1 className="text-center md:text-lg lg:text-xl font-semibold font-playfair mb-7" >
+        <h1 className="text-center text-[15px] md:text-base md:text-lg lg:text-xl font-semibold font-playfair mb-3 md:mb-7" >
           From ethically sourced raw materials to premium organic products,
           explore how Mewar Organics is shaping a greener future
         </h1>
-        <motion.h1 className="md:text-lg lg:text-xl font-[Roboto] text-[#212529] " variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"}>
+        <motion.h1 className="text-sm md:text-lg lg:text-xl font-[Roboto] text-[#212529] " variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"}>
           At Mewar Organics, we offer premium organic solutions, from
           high-quality product manufacturing to sustainable sourcing and
           private-label customization. Partner with us for purity,
           sustainability and innovation.
         </motion.h1>
-        <motion.img src={image_54} alt="image_54" className="my-5" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"} />
-        <motion.p className="md:text-lg lg:text-xl font-[Roboto] text-[#212529]" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"}>
+        <motion.img src={image_54} alt="image_54" className="h-[200px] md:h-auto my-3 md:my-5" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"} />
+        <motion.p className="text-sm md:text-lg lg:text-xl font-[Roboto] text-[#212529]" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"}>
           At Mewar Organics, we believe in transforming spaces into thriving
           green ecosystems that support both nature and human well-being. Our
           projects focus on creating sustainable landscapes using native plants,
           organic practices, and designs that blend beauty with environmental
           purpose. Whether working on small urban gardens or expansive forest
           projects, our approach ensures longterm ecological balance and
-          aesthetic charm. <br /> Our work goes beyond just planting; we create
+          aesthetic charm. <br/>Our work goes beyond just planting; we create
           purposeful landscapes that inspire, educate, and heal. Each project is
           carefully tailored to its location, climate, and cultural importance,
           ensuring that every green space serves a unique function—whether for
@@ -117,11 +117,11 @@ const Portfolio = () => {
       </div>
 
       {/* 3rd Section */}
-      <div className="md:px-8 lg:px-12 xl:px-20">
-        <h1 className="md:text-3xl lg:text-4xl font-semibold font-playfair mb-[32px]">
+      <div className="px-4 md:px-8 lg:px-12 xl:px-20">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold font-playfair mb-4 md:mb-8">
           Worked We Have Done
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:gap-7 lg:gap-4 xl:gap-7">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-7 lg:gap-4 xl:gap-7">
           {/* 1st */}
           <div className="flex flex-col border border-[#55833D] border-2 p-4  rounded-lg md:h-[530px] lg:h-[650px]">
             <div className="overflow-hidden">
@@ -131,21 +131,21 @@ const Portfolio = () => {
                 className="md:h-[300px] lg:h-auto w-full  rounded-lg object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
               />
             </div>
-            <h1 className="lg:mt-4 xl:mt-8 text-center lg:text-lg xl:text-xl font-semibold font-[Roboto]">
+            <h1 className="mt-2 lg:mt-4 xl:mt-8 text-center text-base lg:text-lg xl:text-xl font-semibold font-[Roboto]">
               Miyawaki Forest
             </h1>
-            <h1 className="text-center mb-3 lg:text-base xl:text-lg italic font-[Roboto]">
+            <h1 className="text-center mb-2 md:mb-3 text-[15px] md:text-base xl:text-lg italic font-[Roboto]">
               Urban Biodiversity Project
             </h1>
-            <p className="text-base font-[Roboto] text-center mb-4">
+            <p className="text-sm md:text-base font-[Roboto] text-center mb-4">
               A dense, fast-growing forest usingthe Miyawaki technique,
-              plantedwith native species like Neem,Kadamba, Arjun Tree, and
-              Teak. Thisproject restores urban biodiversity,improves air
-              quality, and creates aself-sustaining ecosystem, ideal
-              forreforestation and corporatesustainability initiatives.
+              planted with native species like Neem,Kadamba, Arjun Tree, and
+              Teak. This project restores urban biodiversity,improves air
+              quality, and creates a self-sustaining ecosystem, ideal
+              for reforestation and corporate sustainability initiatives.
             </p>
             <div className="text-center mt-auto">
-              <Link className="px-[32px] py-[12px] bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2" to='/portfolio/miyawaki'>
+              <Link className="px-4 md:px-8 py-2 md:py-3 bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2" to='/portfolio/miyawaki'>
                 View Project
               </Link>
             </div>
@@ -160,23 +160,23 @@ const Portfolio = () => {
                 className="md:h-[300px] lg:h-auto w-full  rounded-lg object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
               />
             </div>
-            <h1 className="lg:mt-4 xl:mt-8 text-center lg:text-lg xl:text-xl font-semibold font-[Roboto]">
+            <h1 className="mt-2 lg:mt-4 xl:mt-8 text-center lg:text-lg xl:text-xl font-semibold font-[Roboto]">
               Balcony Garden
             </h1>
-            <h1 className="text-center mb-3 lg:text-base xl:text-lg italic font-[Roboto]">
+            <h1 className="text-center mb-2 md:mb-3 text-[15px] md:text-base xl:text-lg italic font-[Roboto]">
               Greening Compact Spaces
             </h1>
-            <p className="text-base font-[Roboto] text-center mb-4">
-              A minimalist green space crafted forcompact urban balconies,
-              featuringornamental plants like Lipstick Plant,Chandni, Ferns,
-              Money Plant, andPeace Lily. Designed to bringgreenery into small
+            <p className="text-sm md:text-base font-[Roboto] text-center mb-4">
+              A minimalist green space crafted for compact urban balconies,
+              featuring ornamental plants like Lipstick Plant,Chandni, Ferns,
+              Money Plant, and Peace Lily. Designed to bring greenery into small
               living spaces,this project focuses on aestheticcharm while
-              requiring minimalmaintenance.
+              requiring minimal maintenance.
             </p>
             <div className="text-center mt-auto">
-              <button className="px-[32px] py-[12px] bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2">
+              <Link className="px-4 md:px-8 py-2 md:py-3 bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2">
                 View Project
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -189,31 +189,31 @@ const Portfolio = () => {
                 className="md:h-[300px] lg:h-auto w-full  rounded-lg object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
               />
             </div>
-            <h1 className="lg:mt-4 xl:mt-8 text-center lg:text-lg xl:text-xl font-semibold font-[Roboto]">
+            <h1 className="mt-2 lg:mt-4 xl:mt-8 text-center lg:text-lg xl:text-xl font-semibold font-[Roboto]">
               Panchvati Vatika
             </h1>
-            <h1 className="text-center mb-3 lg:text-base xl:text-lg italic font-[Roboto]">
+            <h1 className="text-center mb-2 md:mb-3 text-[15px] md:text-base xl:text-lg italic font-[Roboto]">
               Mythological Garden Design
             </h1>
-            <p className="text-base font-[Roboto] text-center mb-4">
+            <p className="text-sm md:text-base font-[Roboto] text-center mb-4">
               A culturally significant gardenfeaturing the five sacred trees
               fromancient mythology – Peepal, Banyan,Amla, Ashoka, and
-              Belpatra.Designed for spiritual reflection andheritage
+              Belpatra.Designed for spiritual reflection and heritage
               preservation, this space combines nature with mythology,offering a
-              serene atmosphere for meditation and cultural storytelling.
+              serene atmosphere for meditation and cultural story telling.
             </p>
             <div className="text-center mt-auto">
-              <button className="px-[32px] py-[12px] bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2">
+              <Link className="px-4 md:px-8 py-2 md:py-3 bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2">
                 View Project
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
       {/* 4th Section */}
-      <div className="md:px-10 lg:px-[100px] xl:px-[300px]">
-        <div className="flex items-center justify-center gap-[40px] lg:gap-[80px] md:px-8 lg:px-[50px] md:py-6 lg:py-[40px] bg-[#55833D]">
+      <div className="px-4 md:px-10 lg:px-[100px] xl:px-[300px]">
+        <div className="flex flex-col md:flex-row items-center justify-center text-center md:text-start gap-4 md:gap-10 lg:gap-20 p-4 md:px-8 lg:px-[50px] md:py-6 lg:py-[40px] bg-[#55833D]">
           <div className="flex flex-col gap-2">
             <h1 className="md:text-xl lg:text-2xl font-playfair text-[#FFF] font-semibold">
               Join Us in Building a Sustainable Future
@@ -225,8 +225,8 @@ const Portfolio = () => {
           </div>
 
           {/* Apply group class here */}
-          <div className="px-6 lg:px-8 py-3 lg:py-4 rounded-lg text-[#FFF] bg-[#55833D] border border-white border-b-4 hover:text-black hover:bg-white" onClick={handleContact}>
-            <button className="w-[100px] flex items-center gap-2 md:text-sm lg:text-base font-medium font-[Roboto]">
+          <div className="px-4 md:px-6 lg:px-8 py-2 md:py-3 lg:py-4 rounded-lg  text-[#FFF] bg-[#55833D] border border-white border-b-4 hover:text-black hover:bg-white" onClick={handleContact}>
+            <button className="w-[100px] flex items-center  gap-2 text-sm md:text-sm lg:text-base font-medium font-[Roboto]">
               GET A QUOTE 
             </button>
           </div>

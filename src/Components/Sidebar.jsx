@@ -66,17 +66,17 @@ const Sidebar = ({setSidebarOpen}) => {
 
             {/* Tab Screen */}
             <div className='flex block lg:hidden '>
-                <img src={image_89} alt='image_89' className='w-[160px] h-[60px]'/>
+                <img src={image_89} alt='image_89' className='w-[160px] h-[50px] md:h-[60px]'/>
                 {/*  */}
                 <button className='flex lg:hidden' onClick={()=>setSidebarOpen(false)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 54 54" fill="none">
                         <path d="M27 4.5C39.4425 4.5 49.5 14.5575 49.5 27C49.5 39.4425 39.4425 49.5 27 49.5C14.5575 49.5 4.5 39.4425 4.5 27C4.5 14.5575 14.5575 4.5 27 4.5ZM35.0775 15.75L27 23.8275L18.9225 15.75L15.75 18.9225L23.8275 27L15.75 35.0775L18.9225 38.25L27 30.1725L35.0775 38.25L38.25 35.0775L30.1725 27L38.25 18.9225L35.0775 15.75Z" fill="#55833D"/>
                     </svg>
                 </button>
             </div>
 
 
-            <div className='mt-20 flex flex-col w-full gap-5   block lg:hidden'>
+            <div className='mt-2 md:mt-10 flex flex-col w-full gap-5   block lg:hidden'>
                 <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2' to='/'>
                     <h1 className='font-medium' >Home</h1>
                 </Link>

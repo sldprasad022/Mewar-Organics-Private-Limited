@@ -215,7 +215,7 @@ const bottomTopVariants1 = {
               </motion.div>
 
                <div className='pl-28 md:pl-46 lg:pl-60 xl:pl-80 pt-6 lg:pt-8'>
-                  <motion.button className='flex gap-2 items-center p-3 md:p-3 lg:p-4 xl:p-5 rounded-xl text-xl bg-[#55833D] text-white flex itmes-center' variants={bottomVariants} initial="hidden" animate={animated ? "visible" : "hidden"} onClick={handleContact}>
+                  <motion.button className='flex gap-2 items-center p-2 md:p-3 lg:p-4 xl:p-5 rounded-xl text-lg md:text-xl bg-[#55833D] text-white flex itmes-center' variants={bottomVariants} initial="hidden" animate={animated ? "visible" : "hidden"} onClick={handleContact}>
                   Contact Us
                   <svg
                   xmlns="http://www.w3.org/2000/svg"

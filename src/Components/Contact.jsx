@@ -12,13 +12,13 @@ const Contact = () => {
   return (
     <div className='flex flex-col md:gap-8 lg:gap-8 xl:gap-14 bg-[#FAF9F6]'>
       {/*  */}
-      <div className='md:h-[500px] lg:h-[460px] xl:h-[500px] bg-cover bg-center relative  bg-stone-800 bg-opacity-50' style={{backgroundImage : `url(${image_85})`}}>
+      <div className='h-[380px] md:h-[500px] lg:h-[460px] xl:h-[500px] bg-cover bg-center relative  bg-stone-800 bg-opacity-50' style={{backgroundImage : `url(${image_85})`}}>
           {/*  */}
           <div className="absolute inset-0 bg-stone-800 opacity-50 z-0"></div>
-          <section className='relative  flex flex-col gap-[50px] pt-[278px] justify-center items-center'>
-              <h1 className='text-[#FFF] md:text-3xl lg:text-4xl  font-semibold font-playfair'>Contact</h1>
+          <section className='relative  flex flex-col gap-[50px] pt-[210px] md:pt-[278px] justify-center items-center'>
+              <h1 className='text-[#FFF] text-3xl md:text-4xl  font-semibold font-playfair'>Contact</h1>
               <div className='flex items-center gap-[5px]'>
-                <Link className='text-[#FFF] text-2xl font-semibold font-[Roboto]' to='/'>Home</Link>
+                <Link className='text-[#FFF] text-xl md:text-2xl font-semibold font-[Roboto]' to='/'>Home</Link>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <g clipPath="url(#clip0_1050_2207)">
                     <path fillRule="evenodd" clipRule="evenodd" d="M5.24417 5.24399C5.40045 5.08776 5.61237 5 5.83334 5C6.05431 5 6.26623 5.08776 6.4225 5.24399L10.5892 9.41066C10.7454 9.56693 10.8332 9.77885 10.8332 9.99982C10.8332 10.2208 10.7454 10.4327 10.5892 10.589L6.4225 14.7557C6.26534 14.9075 6.05483 14.9915 5.83634 14.9896C5.61784 14.9877 5.40883 14.9 5.25432 14.7455C5.09982 14.591 5.01218 14.382 5.01028 14.1635C5.00838 13.945 5.09237 13.7345 5.24417 13.5773L8.82167 9.99982L5.24417 6.42232C5.08795 6.26605 5.00018 6.05413 5.00018 5.83316C5.00018 5.61219 5.08795 5.40026 5.24417 5.24399ZM10.2442 5.24399C10.4004 5.08776 10.6124 5 10.8333 5C11.0543 5 11.2662 5.08776 11.4225 5.24399L15.5892 9.41066C15.7454 9.56693 15.8332 9.77885 15.8332 9.99982C15.8332 10.2208 15.7454 10.4327 15.5892 10.589L11.4225 14.7557C11.2653 14.9075 11.0548 14.9915 10.8363 14.9896C10.6178 14.9877 10.4088 14.9 10.2543 14.7455C10.0998 14.591 10.0122 14.382 10.0103 14.1635C10.0084 13.945 10.0924 13.7345 10.2442 13.5773L13.8217 9.99982L10.2442 6.42232C10.0879 6.26605 10.0002 6.05413 10.0002 5.83316C10.0002 5.61219 10.0879 5.40026 10.2442 5.24399Z" fill="white"/>
@@ -29,7 +29,7 @@ const Contact = () => {
                     </clipPath>
                   </defs>
               </svg>
-              <h1 className='text-[#FFF] text-2xl font-semibold font-[Roboto]'>Contact</h1>
+              <h1 className='text-[#FFF] text-xl md:text-2xl font-semibold font-[Roboto]'>Contact</h1>
               </div>
           </section>
         <div className='absolute bottom-[0px]'>

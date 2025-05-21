@@ -59,7 +59,7 @@ const handleContact = ()=>{
                   {/*  */}
                 <div className="flex items-center gap-10">
                   <div>
-                    <img src={hmenuicon} alt="hmenuicon" className="h-12 lg:h-9 xl:h-11" onClick={()=>setSidebarOpen(!sidebarOpen)} />
+                    <img src={hmenuicon} alt="hmenuicon" className="h-8 md:h-12 lg:h-9 xl:h-11" onClick={()=>setSidebarOpen(!sidebarOpen)} />
                   </div>
                   <div className="hidden  lg:flex justify-center items-center  rounded-s-lg border-[#55833D] rounded-lg border-2 border-solid w-[126px] h-[56px] px-3 py-5  text-[#55833D] hover:bg-[#55833D] hover:text-[#fff]" onClick={handleContact}>
                     <h1 className="text-center text-sm font-medium  font-[Roboto]">
