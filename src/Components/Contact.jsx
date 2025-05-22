@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
-    <div className='flex flex-col md:gap-8 lg:gap-8 xl:gap-14 bg-[#FAF9F6]'>
+    <div className='flex flex-col gap-6 md:gap-8 lg:gap-8 xl:gap-14 bg-[#FAF9F6]'>
       {/*  */}
       <div className='h-[380px] md:h-[500px] lg:h-[460px] xl:h-[500px] bg-cover bg-center relative  bg-stone-800 bg-opacity-50' style={{backgroundImage : `url(${image_85})`}}>
           {/*  */}
@@ -42,12 +42,12 @@ const Contact = () => {
           <div className='lg:h-[490px] xl:h-[530px] w-[450px] bg-center bg-cover absolute left-[80px]' style={{backgroundImage:`url(${image_86})`}}>
           </div>
 
-          <div className='md:px-8 lg:px-12 xl:px-20 flex flex-col lg:flex-row w-full'>
-              <div className='w-full lg:w-1/2 flex flex-col gap-3 lg:gap-5'>
+          <div className='px-4 md:px-8 lg:px-12 xl:px-20 flex flex-col lg:flex-row w-full'>
+              <div className='w-full lg:w-1/2 flex flex-col gap-2 md:gap-3 lg:gap-5'>
                 <h1 className='text-xl lg:text-[32px] text-[#55833D] font-semibold font-[Roboto]'>Contact Us</h1>
-                <h1 className='text-4xl xl:text-5xl text-[#000] font-medium font-playfair'>Contact us anytime to get help!</h1>
+                <h1 className='text-2xl md:text-4xl xl:text-5xl text-[#000] font-medium font-playfair'>Contact us anytime to get help!</h1>
               </div>
-              <p className='w-full lg:w-1/2 md:text-lg xl:text-xl font-[Roboto] text-[#212529] md:mt-5 lg:mt-0' >
+              <p className='w-full lg:w-1/2 text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529] mt-3 md:mt-5 lg:mt-0' >
                   At Mewar Organics, we are committed to bringing you the finest selection of organic and native plants. 
                   Whether you're looking for medicinal herbs, forest plants, or ornamental greens, we ensure quality, sustainability, and expert guidance. 
                   Have a question? Reach out to us—we're here to help you grow your green space!
@@ -57,15 +57,15 @@ const Contact = () => {
 
 
 
-          <div className='mt-[40px] lg:mt-[74px] flex gap-15 justify-center items-center'>
+          <div className='mt-[40px] lg:mt-[74px] flex flex-col md:flex-row gap-8 md:gap-15 justify-start  justify-center items-start md:items-center pl-[16px] md:pl-0'>
               <div className='w-[200px] h-[200px] rounded-full bg-[#FFF] flex items-center justify-center' >
                     <motion.img src={image_87} alt="image_87" className="w-[120px] h-[102px]" animate={{scale: [1,2], rotate: [0,0], borderRadius: ["0%"]}}
                         transition={{duration: 5, ease: "easeInOut", repeat: Infinity, repeatDelay: 1}}/>
               </div>
 
-            <div className='flex flex-col md:gap-8 lg:gap-13 justify-center items-center'>
-                <h1 className='md:text-3xl lg:text-[40px] xl:text-[44px]'>+91 99285 89650</h1>
-                <button className='bg-[#55833D] font-[Roboto] md:p-4 lg:px-8 lg:py-4 rounded-3xl w-[186px] text-[#FFF] hover:bg-blue-500 text-base'>
+            <div className='flex flex-col gap-4 md:gap-8 lg:gap-13 justify-center items-center'>
+                <h1 className='text-2xl md:text-3xl lg:text-[40px] xl:text-[44px]'>+91 99285 89650</h1>
+                <button className='bg-[#55833D] font-[Roboto] p-2 md:p-4 lg:px-8 lg:py-4 rounded-3xl w-[186px] text-[#FFF] hover:bg-blue-500 text-base'>
                   Call Us Now
                 </button>
             </div>
@@ -75,10 +75,10 @@ const Contact = () => {
 
 
       {/*  */}
-      <div className='md:px-8 lg:px-12 xl:px-20  lg:grid lg:grid-cols-12 '>
+      <div className='px-4 md:px-8 lg:px-12 xl:px-20  lg:grid lg:grid-cols-12 '>
           <div className='lg:col-span-4'>
-                <h1 className='md:text-3xl lg:text-4xl xl:text-[44px] md:mb-6 lg:mb-10 xl:mb-20 font-semibold font-playfair'>Address</h1>
-                <div className='flex  gap-[12px]'>
+                <h1 className='text-2xl md:text-3xl lg:text-4xl xl:text-[44px] mb-4 md:mb-6 lg:mb-10 xl:mb-20 font-semibold font-playfair'>Address</h1>
+                <div className='flex  gap-3'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                         <circle cx="16" cy="16" r="16" fill="#55833D"/>
                             <g transform="translate(8,8) scale(1)">
@@ -92,7 +92,7 @@ const Contact = () => {
                     </h1>
                 </div>
 
-                <div className="flex items-center gap-[12px]">
+                <div className="flex items-center gap-[12px] py-2 lg:py-3">
                     <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#55833D]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path
@@ -119,16 +119,16 @@ const Contact = () => {
 
           {/* Form */}
           <div className='lg:col-span-8'>
-              <h1 className='md:text-3xl lg:text-4xl xl:text-[44px] md:mb-6 lg:mb-10 xl:mb-20 font-semibold font-playfair mb-[60px]'>Get In Touch</h1>
-              <form className='grid grid-cols-12 gap-[20px]'>
-                  <div className='col-span-6 flex flex-col'>
-                      <input className='xl:px-[24px] xl:py-[18px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED]' placeholder='  Your Name'/>
-                      <input className='xl:px-[24px] xl:py-[18px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED] my-[40px]' placeholder='  Your Email'/>
-                      <input className='xl:px-[24px] xl:py-[18px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED]' placeholder='  Your Phone'/>
+              <h1 className='text-2xl md:text-3xl lg:text-4xl xl:text-[44px] mb-6 md:mb-6 lg:mb-10 xl:mb-20 font-semibold font-playfair'>Get In Touch</h1>
+              <form className='grid grid-cols-12 gap-4 md:gap-5'>
+                  <div className='col-span-12 md:col-span-6 flex flex-col'>
+                      <input className='xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED]' placeholder='  Your Name'/>
+                      <input className='xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED] my-5 md:my-[40px]' placeholder='  Your Email'/>
+                      <input className='xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED]' placeholder='  Your Phone'/>
                   </div>
-                  <div className='col-span-6 flex flex-col items-center justify-center md:gap-7 lg:gap-12 xl:gap-20'>
-                    <textarea className='md:h-[140px] lg:h-[176px] xl:h-[150px] w-full px-[30px] py-[18px] shadow-lg bg-[#F4F2ED]' placeholder='Write Message'/>
-                    <button className='flex gap-[4px] items-center justify-center md:w-[200px]  lg:w-[183px] xl:w-[220px] bg-[#55833D] rounded-3xl px-[32px] py-[16px] text-[#fff] font-[Roboto]'>
+                  <div className='col-span-12 md:col-span-6 flex flex-col items-start md:items-center justify-center gap-4 md:gap-7 lg:gap-12 xl:gap-20'>
+                    <textarea className='h-[100px] md:h-[140px] lg:h-[176px] xl:h-[150px] w-full px-2.5 md:px-[30px] md:py-[18px] shadow-lg bg-[#F4F2ED]' placeholder='Write Message'/>
+                    <button className='flex gap-[4px] items-center justify-center md:w-[200px]  lg:w-[183px] xl:w-[220px] bg-[#55833D] rounded-3xl px-8 md:px-[32px] py-3 md:py-[16px] text-[#fff] font-[Roboto]'>
                         Send
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                           <path d="M7.15833 14.3167L10.975 10.5L7.15833 6.675L8.33333 5.5L13.3333 10.5L8.33333 15.5L7.15833 14.3167Z" fill="white"/>
@@ -141,18 +141,18 @@ const Contact = () => {
 
 
       {/*  */}
-      <div className="md:px-8 lg:px-12 xl:px-20 ">
+      <div className="px-4 md:px-8 lg:px-12 xl:px-20 ">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6257268932795!2d78.42549292516588!3d17.429740183464727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb912a45f15555%3A0xcacf053510a3c142!2sTechpixe%20India!5e0!3m2!1sen!2sin!4v1746431300092!5m2!1sen!2sin"
-          className='w-full md:h-[400px] lg:h-[600px]'>
+          className='w-full h-[240px] md:h-[400px] lg:h-[600px]'>
         </iframe>
       </div>
 
 
       {/*  */}
-      <div className='md:px-8 lg:px-12 xl:px-20 flex flex-col lg:flex-row w-full gap-[40px] lg:gap-[69px]'>
+      <div className='px-4 md:px-8 lg:px-12 xl:px-20 flex flex-col lg:flex-row w-full gap-5 md:gap-10 lg:gap-[69px]'>
           <div className='w-full lg:w-1/2 flex flex-col '>
-            <h1 className='md:text-3xl lg:text-4xl xl:text-[44px] font-semibold text-[#000] font-playfair text-center'>Thank You</h1>
-            <p className='md:text-lg xl:text-xl font-[Roboto] text-[#212529] md:my-5 lg:my-5 xl:my-10'>
+            <h1 className='text-2xl md:text-3xl lg:text-4xl xl:text-[44px] font-semibold text-[#000] font-playfair text-center'>Thank You</h1>
+            <p className='text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529] my-3 md:my-5 lg:my-5 xl:my-10'>
                 We deeply appreciate your time and interest in exploring our
                 vision at Mewar Organics. It is our mission to create
                 sustainable and beautiful green spaces that inspire peace,
@@ -160,7 +160,7 @@ const Contact = () => {
                 can redefine landscapes and bring life to every corner of your
                 environment.
             </p>
-            <p className='md:text-lg xl:text-xl font-[Roboto] text-[#212529]'>
+            <p className='text-sm md:text-lg xl:text-xl font-[Roboto] text-[#212529]'>
                 We look forward to collaborating with you on a journey toward
                 a greener, healthier, and more harmonious future. Let’s build a
                 legacy of nature and beauty, one greenscape at a time. Thank

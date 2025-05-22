@@ -248,15 +248,15 @@ const GardenMaintance = () => {
     }
 
   return (
-    <div className='flex flex-col md:gap-8 lg:gap-8  xl:gap-14'>
+    <div className='flex flex-col gap-6 md:gap-8 lg:gap-8  xl:gap-14'>
         {/* 1st Section */}
-        <div className='bg-cover bg-center md:h-[500px] xl:h-[500px] relative bg-stone-800 bg-opacity-50' style={{backgroundImage:`url(${image_97})`}}>
+        <div className='bg-cover bg-center h-[380px] md:h-[500px] xl:h-[500px] relative bg-stone-800 bg-opacity-50' style={{backgroundImage:`url(${image_97})`}}>
              <div className="absolute inset-0 bg-stone-900 opacity-50 z-0"></div>
         {/*  */}
-        <section className='relative z-10 pt-[302px] flex flex-col gap-[50px] justify-center items-center text-[#fff] '>
-            <h1 className='text-[44px] font-semibold font-playfair'>Garden Maintenance</h1>
+        <section className='relative z-10 pt-[210px] md:pt-[302px] flex flex-col gap-[50px] justify-center items-center text-[#fff] '>
+            <h1 className='text-3xl md:text-4xl  lg:text-4xl font-semibold font-playfair'>Garden Maintenance</h1>
             <div className='flex items-center'>
-                <Link className='text-2xl font-semibold font-[Roboto]' to='/'>Home</Link>
+                <Link className='text-xl md:text-2xl font-semibold font-[Roboto]' to='/'>Home</Link>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <g clip-path="url(#clip0_1050_2594)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.24399 5.24399C5.40026 5.08776 5.61219 5 5.83316 5C6.05413 5 6.26605 5.08776 6.42232 5.24399L10.589 9.41066C10.7452 9.56693 10.833 9.77885 10.833 9.99982C10.833 10.2208 10.7452 10.4327 10.589 10.589L6.42232 14.7557C6.26515 14.9075 6.05465 14.9915 5.83615 14.9896C5.61766 14.9877 5.40865 14.9 5.25414 14.7455C5.09963 14.591 5.01199 14.382 5.01009 14.1635C5.00819 13.945 5.09219 13.7345 5.24399 13.5773L8.82149 9.99982L5.24399 6.42232C5.08776 6.26605 5 6.05413 5 5.83316C5 5.61219 5.08776 5.40026 5.24399 5.24399ZM10.244 5.24399C10.4003 5.08776 10.6122 5 10.8332 5C11.0541 5 11.266 5.08776 11.4223 5.24399L15.589 9.41066C15.7452 9.56693 15.833 9.77885 15.833 9.99982C15.833 10.2208 15.7452 10.4327 15.589 10.589L11.4223 14.7557C11.2652 14.9075 11.0547 14.9915 10.8362 14.9896C10.6177 14.9877 10.4086 14.9 10.2541 14.7455C10.0996 14.591 10.012 14.382 10.0101 14.1635C10.0082 13.945 10.0922 13.7345 10.244 13.5773L13.8215 9.99982L10.244 6.42232C10.0878 6.26605 10 6.05413 10 5.83316C10 5.61219 10.0878 5.40026 10.244 5.24399Z" fill="white"/>
@@ -267,7 +267,7 @@ const GardenMaintance = () => {
                         </clipPath>
                     </defs>
                 </svg>
-                <Link className='text-2xl font-semibold font-[Roboto]' to='/services'>Services</Link>
+                <Link className='text-xl md:text-2xl font-semibold font-[Roboto]' to='/services'>Services</Link>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <g clip-path="url(#clip0_1050_2594)">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.24399 5.24399C5.40026 5.08776 5.61219 5 5.83316 5C6.05413 5 6.26605 5.08776 6.42232 5.24399L10.589 9.41066C10.7452 9.56693 10.833 9.77885 10.833 9.99982C10.833 10.2208 10.7452 10.4327 10.589 10.589L6.42232 14.7557C6.26515 14.9075 6.05465 14.9915 5.83615 14.9896C5.61766 14.9877 5.40865 14.9 5.25414 14.7455C5.09963 14.591 5.01199 14.382 5.01009 14.1635C5.00819 13.945 5.09219 13.7345 5.24399 13.5773L8.82149 9.99982L5.24399 6.42232C5.08776 6.26605 5 6.05413 5 5.83316C5 5.61219 5.08776 5.40026 5.24399 5.24399ZM10.244 5.24399C10.4003 5.08776 10.6122 5 10.8332 5C11.0541 5 11.266 5.08776 11.4223 5.24399L15.589 9.41066C15.7452 9.56693 15.833 9.77885 15.833 9.99982C15.833 10.2208 15.7452 10.4327 15.589 10.589L11.4223 14.7557C11.2652 14.9075 11.0547 14.9915 10.8362 14.9896C10.6177 14.9877 10.4086 14.9 10.2541 14.7455C10.0996 14.591 10.012 14.382 10.0101 14.1635C10.0082 13.945 10.0922 13.7345 10.244 13.5773L13.8215 9.99982L10.244 6.42232C10.0878 6.26605 10 6.05413 10 5.83316C10 5.61219 10.0878 5.40026 10.244 5.24399Z" fill="white"/>
@@ -278,7 +278,7 @@ const GardenMaintance = () => {
                         </clipPath>
                     </defs>
                 </svg>
-                <h1 className='text-2xl font-semibold font-[Roboto]'>Garden Maintenance</h1>
+                <h1 className='text-xl md:text-2xl font-semibold font-[Roboto]'>Garden Maintenance</h1>
             </div>
         </section>
 
@@ -290,25 +290,25 @@ const GardenMaintance = () => {
 
 
         {/* 2nd Section */}
-        <div className='md:px-8 lg:px-12 xl:px-20 flex flex-col lg:flex-row w-full gap-10 lg:gap-[92px]'>
+        <div className='px-4 md:px-8 lg:px-12 xl:px-20 flex flex-col lg:flex-row w-full gap-10 lg:gap-[92px]'>
             {/* 1st Section */}
-            <div className='w-full lg:w-3/12 grid md:gap-5 lg:gap-5 xl:gap-10'>
+            <div className='w-full lg:w-3/12 grid gap-5 md:gap-5 lg:gap-5 xl:gap-10'>
                 {/* 1st 1st section */}
-                <div className='grid gap-6 lg:gap-[6px] xl:gap-[10px] justify-center items-center'>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Educational Workshops & Awareness</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Garden Maintenance</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Planning & Consulting</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Vatika Creations</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Custom Garden Solutions</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Miyawaki Forest Development</h1>
-                    <h1 className='lg:h-[70px] xl:h-[82px]   md:px-44 lg:px-[30px] xl:px-[50px] md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Plantation & Sales</h1>
+                <div className='grid gap-4 md:gap-6 lg:gap-[6px] xl:gap-[10px] justify-center items-center'>
+                    <h1 className='lg:h-[70px] xl:h-[82px]  px-[30px]  md:px-44 lg:px-[30px] xl:px-[50px] py-2 md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Educational Workshops & Awareness</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]  px-[30px]  md:px-44 lg:px-[30px] xl:px-[50px] py-2 md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Garden Maintenance</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]  px-[30px]  md:px-44 lg:px-[30px] xl:px-[50px] py-2 md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Planning & Consulting</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]  px-[30px]  md:px-44 lg:px-[30px] xl:px-[50px] py-2 md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Vatika Creations</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]  px-[30px]  md:px-44 lg:px-[30px] xl:px-[50px] py-2 md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Custom Garden Solutions</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]  px-[30px]  md:px-44 lg:px-[30px] xl:px-[50px] py-2 md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Miyawaki Forest Development</h1>
+                    <h1 className='lg:h-[70px] xl:h-[82px]  px-[30px]  md:px-44 lg:px-[30px] xl:px-[50px] py-2 md:py-5  lg:py-[17px] xl:py-[25px] bg-[#F6F2FA] text-[#212529] text-lg font-medium font-[Roboto]'>Plantation & Sales</h1>
                 </div>
                 {/*1st 2nd section*/}
                 <div className='bg-cover bg-center lg:h-[516px] ' style={{backgroundImage:`url(${image_98})`}}>
                     {/* section */}
                     <section className='px-[11px] py-[100px] flex flex-col items-center bg-stone-800 bg-opacity-50'>
-                        <h1 className='text-[#55833D] font-extrabold font-[Roboto]'>Contact Us now</h1>
-                        <h1 className='py-[20px] text-[#FFF] text-[28px] font-bold font-[Roboto]'>If need help!</h1>
+                        <h1 className='text-[#55833D] font-extrabold font-[Roboto] '>Contact Us now</h1>
+                        <h1 className='py-[20px] text-[#FFF] text-xl md:text-[28px] font-bold font-[Roboto]'>If need help!</h1>
                         <hr className='bg-[#FFF] h-[1px] w-[287px] mb-[30px]'/>
                         <h1 className='mb-[30px] text-[#FFF] font-[Roboto] text-xl'>Or go to contact form  :</h1>
                         <h1 className='mb-[35px] font-[Roboto] font-medium text-[#FFF] text-[28px]'>+91 99285 89650</h1>
@@ -326,54 +326,54 @@ const GardenMaintance = () => {
 
 
             {/* 2nd Section */}
-            <div className='w-full lg:w-9/12 flex flex-col md:gap-5 lg:gap-10 xl:gap-10'>
+            <div className='w-full lg:w-9/12 flex flex-col gap-5 md:gap-5 lg:gap-10 xl:gap-10'>
                 {/* 2nd - 1st */}
-                <img src={image_99} alt='image_99' className='lg:h-[400px]  xl:h-[468px] lg:w-[95%] xl:w-full'/>
+                <img src={image_99} alt='image_99' className='h-[360px] md:h-auto lg:h-[400px]  xl:h-[468px] lg:w-[95%] xl:w-full'/>
                {/*  */}
                 <div className='flex flex-col lg:w-[95%] xl:w-full'>
-                    <h1 className='mb-5 md:text-3xl lg:text-4xl xl:text-[44px] font-semibold font-playfair'>Garden Maintenance</h1>
-                    <p className='md:text-lg lg:text-xl text-[#000] font-[Roboto]'> Comprehensive garden maintenance services to keep your outdoor spaces healthy, clean, and thriving year-round. 
+                    <h1 className='mb-5 text-2xl md:text-3xl lg:text-4xl xl:text-[44px] font-semibold font-playfair'>Garden Maintenance</h1>
+                    <p className='text-sm md:text-lg lg:text-xl text-[#000] font-[Roboto]'> Comprehensive garden maintenance services to keep your outdoor spaces healthy, clean, and thriving year-round. 
                         From lawn care and pruning to seasonal clean-ups, we ensure every detail is handled with care.
                     </p>
-                    <p className='py-[10px] md:text-lg lg:text-xl text-[#000] font-[Roboto]'>
+                    <p className='py-[10px] text-sm md:text-lg lg:text-xl text-[#000] font-[Roboto]'>
                         Elevate your outdoor living with tailored garden maintenance. 
                         Our expert team provides meticulous care — from sculpted hedges to vibrant seasonal blooms — ensuring a lush, refined landscape all year round.
                     </p>
-                    <p className='md:text-lg lg:text-xl text-[#000] font-[Roboto]'>
+                    <p className='text-sm md:text-lg lg:text-xl text-[#000] font-[Roboto]'>
                         We take the hassle out of garden care! Whether it’s trimming, weeding, mowing, or refreshing your plants, 
                         our team keeps your garden looking its best — so you can enjoy it without the hard work.
                     </p>
                 </div>
                 {/* 2nd- 2 */}
-                <div className='flex gap-[30px] xl:gap-[60px] lg:w-[95%] xl:w-full'>
+                <div className='flex flex-col md:flex-row gap-[30px] xl:gap-[60px] lg:w-[95%] xl:w-full'>
                     {/*  */}
-                    <div className='flex items-center justify-center lg:gap-[20px] xl:gap-[25px] lg:p-3 xl:p-[5px] lg:w-[300px] xl:w-[390px] h-[150px] shadow-xl bg-[#F6F2FA] rounded-xl'>
+                    <div className='flex items-center justify-center gap-1 lg:gap-[20px] xl:gap-[25px] lg:p-3 xl:p-[5px] lg:w-[300px] xl:w-[390px] h-[150px] shadow-xl bg-[#F6F2FA] rounded-xl'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44" fill="none">
                             <path d="M37.8815 35.512L30.5298 33.0003L27.9998 40.3337L22.3532 29.3337L16.9998 40.3337L14.4698 33.0003L7.11816 35.512L12.4715 24.512C10.7115 22.312 9.6665 19.5253 9.6665 16.5003C9.6665 13.0967 11.0186 9.8325 13.4253 7.42579C15.832 5.01907 19.0962 3.66699 22.4998 3.66699C25.9034 3.66699 29.1677 5.01907 31.5744 7.42579C33.9811 9.8325 35.3332 13.0967 35.3332 16.5003C35.3332 19.5253 34.2882 22.312 32.5282 24.512L37.8815 35.512ZM13.3332 16.5003L18.2648 18.957L17.9165 24.457L22.4998 21.4137L27.0832 24.4387L26.7715 18.957L31.6665 16.5003L26.7532 14.0253L27.0832 8.56199L22.4998 11.5687L17.9165 8.52533L18.2282 14.0437L13.3332 16.5003Z" fill="#55833D"/>
                         </svg>
-                        <div className='flex flex-col gap-[20px]'>
-                            <h1 className='lg:text-xl xl:text-2xl text-[#000] font-[Roboto] font-medium'>Why It soft?</h1>
-                            <h1 className='lg:text-lg xl:text-xl text-[#000] font-[Roboto]'>We're making room for self care today with plan.</h1>
+                        <div className='flex flex-col gap-4 md:gap-5'>
+                            <h1 className='text-2xl md:text-base lg:text-xl xl:text-2xl text-[#000] font-[Roboto] font-medium'>Why It soft?</h1>
+                            <h1 className='text-base md:text-sm  lg:text-lg xl:text-xl text-[#000] font-[Roboto]'>We're making room for self care today with plan.</h1>
                         </div>
                     </div>
                     {/*  */}
-                    <div className='flex items-center justify-center lg:gap-[20px] xl:gap-[25px] lg:p-3 xl:p-[5px] lg:w-[300px] xl:w-[390px] h-[150px] shadow-xl bg-[#F6F2FA] rounded-xl'>
+                    <div className='flex items-center justify-center gap-1 lg:gap-[20px] xl:gap-[25px] lg:p-3 xl:p-[5px] lg:w-[300px] xl:w-[390px] h-[150px] shadow-xl bg-[#F6F2FA] rounded-xl'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
                             <path d="M4.40039 14.2002H11.7598V27.8428H27.5996V30.7998C27.5996 32.6675 26.0678 34.2001 24.2002 34.2002H12.7861L12.4932 34.4932L7.59961 39.3857V34.2002H4.40039C2.53268 34.2002 1 32.6675 1 30.7998V17.6006C1 15.7329 2.53268 14.2002 4.40039 14.2002ZM19.7998 3.2002H39.5996C41.4673 3.2002 43 4.73287 43 6.60059V19.7998C43 21.6694 41.4676 23.2002 39.5996 23.2002H36.4004V28.3857L31.5068 23.4932L31.2139 23.2002H16.4004V6.60059C16.4004 4.73294 17.9322 3.2003 19.7998 3.2002Z" stroke="#55833D" strokeWidth="2"/>
                         </svg>
-                        <div className='flex flex-col gap-[20px]'>
-                            <h1 className='lg:text-xl xl:text-2xl text-[#000] font-[Roboto] font-medium'>Unlimited support</h1>
-                            <h1 className='lg:text-lg xl:text-xl text-[#000] font-[Roboto]'>New range coming in on a weekly basis veg section.</h1>
+                        <div className='flex flex-col gap-4 md:gap-5'>
+                            <h1 className='text-2xl md:text-base lg:text-xl xl:text-2xl text-[#000] font-[Roboto] font-medium'>Unlimited support</h1>
+                            <h1 className='text-base md:text-sm lg:text-lg xl:text-xl text-[#000] font-[Roboto]'>New range coming in on a weekly basis veg section.</h1>
                         </div>
                     </div>
                 </div>
             
                 {/* 3rd */}
-                <div className='flex gap-5 lg:gap-[20px] xl:gap-[40px] md:w-full lg:w-[95%] xl:w-full'>
+                <div className='flex flex-col md:flex-row gap-3 md:gap-5 lg:gap-[20px] xl:gap-[40px] md:w-full lg:w-[95%] xl:w-full'>
                     <img src={image_100} alt='image_100' className='md:w-1/2 lg:w-[220px] xl:w-[438px] h-[250px]'/>
-                    <div className='flex flex-col gap-5'>
-                        <h1 className='md:text-xl md:text-2xl text-[#000] font-[Roboto] font-medium'>We serve the best work</h1>
-                        <p className='md:text-lg lg:text-xl text-[#000] font-[Roboto]'>
+                    <div className='flex flex-col gap-3 md:gap-5'>
+                        <h1 className='text-2xl md:text-xl md:text-2xl text-[#000] font-[Roboto] font-medium'>We serve the best work</h1>
+                        <p className='text-sm md:text-lg lg:text-xl text-[#000] font-[Roboto]'>
                             By initiating your project with Fingent, you get a dedicated and skilled team backing you up to around-the-clock. 
                             All our processes are the one customer oriented, designed to reduce the cost of business operations.
                         </p>
@@ -381,7 +381,7 @@ const GardenMaintance = () => {
                 </div>
 
                 {/* 4th */}
-                <div className='flex lg:gap-[20px] xl:gap-[87px] lg:w-[95%] xl:w-full'>
+                <div className='flex flex-col md:flex-row gap-4 md:gap-0 lg:gap-[20px] xl:gap-[87px] lg:w-[95%] xl:w-full'>
                     <div className='flex items-center gap-3 lg:gap-5 '>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                         <rect width="60" height="60" rx="8" fill="#55833D"/>
@@ -453,31 +453,31 @@ const GardenMaintance = () => {
         </div> */}
 
         {/* 3rd Section */}
-        <div className='md:px-8 lg:px-12 xl:px-20 w-full flex flex-col lg:flex-row gap-10'>
+        <div className='px-4 md:px-8 lg:px-12 xl:px-20 w-full flex flex-col lg:flex-row gap-5 md:gap-10'>
             {/* Row: 1st and 2nd Section side by side on md+ */}
-            <div className='flex flex-col md:flex-row md:gap-10'>
+            <div className='flex flex-col md:flex-row gap-5 md:gap-10'>
                 {/* 1st Section */}
                 <div className='w-full md:w-1/2 order-1'>
                     <h1 className='text-[#55833D] font-[Roboto] text-xl font-semibold'>Care Features</h1>
-                    <h1 className='py-[20px] text-[#000] md:text-3xl lg:text-4xl xl:text-[44px] font-playfair'>Design with Distinction</h1>
-                    <p className='mb-8 lg:mb-[78px] md:text-lg lg:text-xl font-[Roboto]'>Welcome to Garda. For 25 years, we have brought our signature design aesthetic to public and private gardens throughout New York City. 
+                    <h1 className='py-2 md:py-5 text-[#000] md:text-3xl lg:text-4xl xl:text-[44px] font-playfair'>Design with Distinction</h1>
+                    <p className='mb-4 md:mb-8 lg:mb-[78px] text-sm md:text-lg lg:text-xl font-[Roboto]'>Welcome to Garda. For 25 years, we have brought our signature design aesthetic to public and private gardens through out New York City. 
                         Our goal is to increase the natural beauty of every landscape.
                     </p>
-                    <button className='md:px-8 md:py-3 lg:py-4 border lg:border-solid lg:border-4 lg:border-b-8 md:bg-[#55833D] lg:border-[#55833D] md:rounded-[8px] lg:rounded-[100px] md:text-[#FFF] lg:text-[#212529] font-[Roboto] font-semibold lg:text-lg' onClick={handleClick}>
+                    <button className='px-8 md:px-8 py-3 md:py-3 lg:py-4 border lg:border-solid lg:border-4 lg:border-b-8 bg-[#55833D] lg:border-[#55833D] rounded-[8px] lg:rounded-[100px] text-[#FFF] lg:text-[#212529] font-[Roboto] font-semibold lg:text-lg' onClick={handleClick}>
                         Contact Us
                     </button>       
                 </div>
                 {/* 2nd Section */}
                 <div className='w-full md:w-1/2 order-2'>
                     {/*  */}
-                    <div className='md:mb-[20px] lg:mb-[40px] xl:mb-[90px]'>
+                    <div className='mb-5 md:mb-5 lg:mb-20 xl:mb-[90px]'>
                         <div className='p-[14px] bg-[#F6F2FA] w-[60px] rounded-r-[40px]'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                 <path d="M20.1335 2.41309L16.3602 6.18642C15.3335 7.22642 15.3335 8.91975 16.3602 9.95975L18.2402 11.8398L12.1735 17.9064L8.41351 14.1331L6.52018 15.9998C-0.0798185 22.6664 4.66685 27.3331 4.66685 27.3331C4.66685 27.3331 9.33352 31.9998 16.0002 25.4531L17.8802 23.5731L14.1468 19.8398L20.2002 13.7864L22.0535 15.6398C23.0935 16.6664 24.7868 16.6664 25.8268 15.6398L29.6002 11.8664L20.1335 2.41309ZM23.9068 13.7064L22.0668 11.8664L20.1468 9.94642L18.2802 8.07975L20.1602 6.19975L25.8002 11.8398L23.9068 13.7064Z" fill="#55833D"/>
                             </svg>
                         </div>
-                        <h1 className='md:py-3 xl:py-5 md:text-2xl lg:text-[28px] font-[Roboto] font-medium'>Variation Gardening</h1>
-                        <h1 className='text-[#000] font-[Roboto] md:text-lg lg:text-xl'>Verdant foliage and native plants create a lush look for this landscape.</h1>
+                        <h1 className='py-2 md:py-3 xl:py-5 md:text-2xl lg:text-[28px] font-[Roboto] font-medium'>Variation Gardening</h1>
+                        <h1 className='text-[#000] font-[Roboto] text-sm md:text-lg lg:text-xl'>Verdant foliage and native plants create a lush look for this landscape.</h1>
                     </div>
                     {/*  */}
                     <div className=''>
@@ -486,14 +486,14 @@ const GardenMaintance = () => {
                                 <path d="M18.6668 8L13.6668 14.6667L17.4668 19.7333L15.3335 21.3333C13.0802 18.3333 9.3335 13.3333 9.3335 13.3333L1.3335 24H30.6668L18.6668 8Z" fill="#55833D"/>
                             </svg>
                         </div>
-                        <h1 className='md:py-3 xl:py-5 md:text-2xl lg:text-[28px] font-[Roboto] font-medium'>Professional Landscaping</h1>
-                        <h1 className='text-[#000] font-[Roboto] md:text-lg lg:text-xl'>Professional landscaping requires creativity, a sense of design.</h1>         
+                        <h1 className='py-2 md:py-3 xl:py-5 md:text-2xl lg:text-[28px] font-[Roboto] font-medium'>Professional Landscaping</h1>
+                        <h1 className='text-[#000] font-[Roboto] text-sm md:text-lg lg:text-xl'>Professional landscaping requires creativity, a sense of design.</h1>         
                     </div>                 
                 </div>
             </div>
             {/* 3rd Section - Full width below on all screens */}
             <div className='w-full order-3'>
-                <img src={image_101} alt='image_101' className='w-full md:h-[600px] lg:h-[500px] xl:h-[550px]  object-cover object-center'/>
+                <img src={image_101} alt='image_101' className='w-full h-[340px] md:h-[600px] lg:h-[500px] xl:h-[550px]  object-cover object-center'/>
             </div>
         </div>
 
