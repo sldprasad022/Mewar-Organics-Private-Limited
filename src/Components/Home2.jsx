@@ -65,7 +65,44 @@ import ScrollContainer from 'react-indiana-drag-scroll';
 const Home2 = () => {
 
 
+//------------------------------------Form Submition-------------------------------------
+const [formData,setFormData] = useState({
+  name :'',
+  email:'',
+  service:'',
+  message :''
+})
 
+const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  
+
+
+  const handleSubmit =(e)=>{
+    e.preventDefault();
+
+    const formValues = new FormData();
+    formValues.append('name',formData.name);
+    formValues.append('email',formData.email);
+    formValues.append('service',formData.service);
+    formValues.append('message',formData.message);
+    formValues.append("subject", "Contact Form");
+    formValues.append("toEmail", "durgaprasad@techpixe.com");
+
+
+
+  }
+
+
+
+
+//------------------------------------------------------------------------------------
 const navigateTo = useNavigate();
 
 const handleClickCategeory = ()=>{
@@ -112,7 +149,7 @@ const handleClick = ()=>{
     },
     {
       image : p_6,
-      title:'Educational Workshops & Awareness:'
+      title:'Educational Workshops & Awareness'
     },
     {
     image : p_7,
@@ -214,7 +251,7 @@ const bottomTopVariants1 = {
                   <p className="text-[#30341b] md:text-lg lg:text-xl xl:text-[24px] text-center font-semibold mx-auto w-full max-w-[30%] md:max-w-[40%] lg:max-w-[70%] font-[Roboto]">Experience the power of organic wellness with Mewar Organics</p>
               </motion.div>
 
-               <div className='pl-28 md:pl-46 lg:pl-60 xl:pl-80 pt-6 lg:pt-8'>
+               <div className='pl-28 md:pl-44 lg:pl-60 xl:pl-80 pt-6 lg:pt-8'>
                   <motion.button className='flex gap-2 items-center p-2 md:p-3 lg:p-4 xl:p-5 rounded-xl text-lg md:text-xl bg-[#55833D] text-white flex itmes-center' variants={bottomVariants} initial="hidden" animate={animated ? "visible" : "hidden"} onClick={handleContact}>
                   Contact Us
                   <svg
@@ -301,10 +338,9 @@ const bottomTopVariants1 = {
               <p className="text-sm md:text-lg lg:text-xl  font-[Roboto]">
                 At Mewar Organics, we go beyond just selling plants we provide
                 holistic green solutions including plantation services, themed
-
                 gardens (like Nakshatra and Rashi Vatikas), Miyawaki forest
                 development, and custom garden projects such as terrace gardens,
-                kitchen gardens, and balcony setups. With a deep respect for
+                kitchen gardens and balcony setups. With a deep respect for
                 nature and cultural heritage, we blend traditional wisdom with
                 modern landscaping techniques to transform spaces into thriving,
                 sustainable ecosystems.
@@ -322,10 +358,12 @@ const bottomTopVariants1 = {
       <img src={himage_6} alt="himage_6" className="px-4 md:px-8 lg:px-12 xl:px-20 w-full"/>
 
       <div className='px-4 md:px-8 lg:px-12 xl:px-20'>
+        <h1 className='text-center lg:text-xl xl:text-[28px] font-[Roboto] text-[#55833D] font-semibold'>Services</h1>
+        <h1 className='text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-playfair  font-semibold mb-3 md:mb-4 lg:mb-8'>Our Awesome Services</h1>
           <ScrollContainer className="flex gap-4 md:gap-3 lg:gap-6 overflow-x-hidden cursor-grab active:cursor-grabbing" vertical={false} hideScrollbars={true}>
             {dataList.map((eachObject, index) => (
               <div key={index} className="p-5 bg-[#FFF] rounded-xl shadow-2xl flex-shrink-0 flex flex-col gap-4 items-center justify-center w-[180px] md:w-[250px] h-[120px] md:h-[150px] hover:border hover:border-b-[#55833D] hover:border-solid hover:border-b-8" onClick={handleClick}>
-                <img src={eachObject.image} alt="icon" className="w-9 md:w-12 h-9 md:h-12 mb-2" />
+                <img src={eachObject.image} alt="icon" className="w-9 md:w-12 h-9 md:h-12 mb-1 md:mb-2" />
                 <p className="text-center text-sm md:text-lg">{eachObject.title}</p>
               </div>
             ))}
@@ -709,15 +747,30 @@ const bottomTopVariants1 = {
             <h1 className="text-2xl text-[#55833D] font-medium font-[Roboto] mb-1 md:mb-[10px]">FREE ESTIMATION</h1>
             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-playfair font-semibold mb-5 md:mb-10 lg:mb-[72px]">Request a Quote</h1>
             <div className="">
-              <form className="flex gap-2 md:gap-[20px]">
+              <form className="flex gap-2 md:gap-[20px]" onSubmit={handleSubmit}>
                 <div className="w-1/2 flex flex-col gap-3 md:gap-10">
-                  <input className="h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" placeholder="      Your Name"/>
-                  <input className="h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" placeholder="      Your Email" />
-                  <input className="h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" placeholder="      drop down"/>
+                  <input className="h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" type='text' name='name'
+                  onChange={handleChange}
+                  value={formData.name} 
+                  placeholder="      Your Name"
+                  />
+                  <input className="h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" type='email' name='email'
+                  onChange={handleChange}
+                  value={formData.email} 
+                  placeholder="      Your Email
+                  " />
+                  <input className="h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" type='text' name='service'
+                  onChange={handleChange}
+                  value={formData.service} 
+                  placeholder="      drop down"
+                  />
                 </div>
                 <div className="w-1/2 flex flex-col gap-5.5 md:gap-14 lg:gap-13 xl:gap-12">
-                  <textarea className="h-[60px] md:h-[130px] lg:h-[160px] xl:h-[196px] lg:rounded-[18px] rounded-[24px] bg-[#F4F2ED]" placeholder="     Write Message"/>
-                  <button className="bg-[#55833D] rounded-xl px-2 md:px-5 py-1.5 md:py-3 lg:px-6 lg:py-2  xl:px-8 xl:py-4 text-[#fff] text-sm md:text-base xl:text-xl">Make an Appointment</button>
+                  <textarea className="h-[60px] md:h-[130px] lg:h-[160px] xl:h-[196px] lg:rounded-[18px] rounded-[24px] bg-[#F4F2ED]" type='text' name='message' 
+                  onChange={handleChange}
+                  value={formData.message}
+                  placeholder="     Write Message"/>
+                  <button type='submit' className="bg-[#55833D] rounded-xl px-2 md:px-5 py-1.5 md:py-3 lg:px-6 lg:py-2  xl:px-8 xl:py-4 text-[#fff] text-sm md:text-base xl:text-xl">Make an Appointment</button>
                 </div>
                 </form>
             </div>

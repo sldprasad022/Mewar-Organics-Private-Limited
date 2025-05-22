@@ -101,8 +101,8 @@ const About = () => {
         </p>
         <p className='text-sm md:text-lg lg:text-xl font-[Roboto]'>
             At Mewar Organics, we go beyond just selling plants we provide holistic green solutions including plantation services, themed gardens (like Nakshatra and Rashi Vatikas), Miyawaki
-            forest development, and custom garden projects such as terrace gardens, kitchen gardens, and balcony setups. With a deep respect for nature and cultural heritage, we blend traditional
-            wisdom with modern landscaping techniques to transform spaces into thriving, sustainable ecosystems
+            forest development, and custom garden projects such as terrace gardens, kitchen garden and balcony setups. With a deep respect for nature and cultural heritage, we blend traditional
+            wisdom with modern landscaping techniques to transform spaces into thriving, sustainable ecosystems.
         </p>
       </motion.div>
 
@@ -144,7 +144,7 @@ const About = () => {
                           <img src={image_24} alt='image_24' className="md:h-auto lg:h-[220px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                       </div>
                       <h1 className="text-center  font-bold md:text-xl lg:text-lg xl:text-xl mb-1 md:mb-2 font-[Roboto] ">Native Plant Advocacy</h1>
-                      <h1 className="text-center  text-base lg:text-sm font-[Roboto]">Focus on local and sustainable plant species</h1>
+                      <h1 className="text-center  text-base lg:text-sm font-[Roboto]">Focus on local and sustainable plant species.</h1>
                   </div>
                   {/*  */}
                   <div className="shadow-lg p-5 md:p-6 lg:p-5 xl:py-8 xl:px-7 rounded-lg">

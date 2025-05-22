@@ -2,6 +2,7 @@
 import React,{useState,useEffect} from 'react'
 import mewarlogo from "../assets/mewarlogo.png";
 import hmenuicon from "../assets/hmenuicon.png";
+import mewarlogo1 from '../assets/mewarlogo1.png'
 import { NavLink } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import { useNavigate } from "react-router-dom";
@@ -13,18 +14,18 @@ const [sidebarOpen,setSidebarOpen] = useState(false);
 
 //------------------------------------------------------------------------
 
-useEffect(() => {
-  if (sidebarOpen) {
-    document.body.style.overflow = 'hidden'; // Prevent background scroll
-  } else {
-    document.body.style.overflow = 'auto';   // Restore scroll
-  }
+// useEffect(() => {
+//   if (sidebarOpen) {
+//     document.body.style.overflow = 'hidden'; // Prevent background scroll
+//   } else {
+//     document.body.style.overflow = 'auto';   // Restore scroll
+//   }
 
-  // Clean-up in case the component unmounts
-  return () => {
-    document.body.style.overflow = 'auto';
-  };
-}, [sidebarOpen]);
+//   // Clean-up in case the component unmounts
+//   return () => {
+//     document.body.style.overflow = 'auto';
+//   };
+// }, [sidebarOpen]);
 
 //------------------------------------------------------------------------
 
@@ -42,7 +43,7 @@ const handleContact = ()=>{
               {/*  */}
               <div className="my-3 md:my-[15px]">
                 <img
-                  src={mewarlogo}
+                  src={mewarlogo1}
                   alt="mewarlogo"
                   className="h-[35px] md:h-[60px] lg:h-[70px] object-cover"
                 />
@@ -75,13 +76,23 @@ const handleContact = ()=>{
                       )} */}
 
 
-                      {sidebarOpen && (
+                      {/* {sidebarOpen && (
                         <div className='fixed top-0 right-0 z-50 h-screen w-full '>
                           <div className='absolute right-0 top-0 h-full'>
                             <Sidebar setSidebarOpen={setSidebarOpen} />
                           </div>
                         </div>
+                      )} */}
+
+                    {/* h-screen w-full" onClick={() => setSidebarOpen(false)} the sidebar will be close if we click out side of the sidebar */}
+                      {sidebarOpen && (
+                        <div className="fixed top-0 right-0 z-50 h-screen w-full" onClick={() => setSidebarOpen(false)}>
+                          <div className="absolute right-0 top-0 h-full">
+                            <Sidebar setSidebarOpen={setSidebarOpen} />
+                          </div>
+                        </div>
                       )}
+
 
         </div>
       </>
