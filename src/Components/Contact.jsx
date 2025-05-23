@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GRASS from "../assets/hgrass_2.png";
 import image_85 from "../assets/image_85.png";
 import image_86 from "../assets/image_86.png";
@@ -9,6 +9,66 @@ import { easeInOut, motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
+
+  //-------------------------------------------Form Submition------------------------------------
+
+  const[formData,setFormData]=useState({
+    name :'',
+    email :'',
+    mobileNumber :'',
+    service :'',
+    message :''
+  })
+
+  const handleChange = (e)=>{
+    const{name,value} = e.target
+    setFormData((prev)=>({
+      ...prev,
+      [name] : value,
+    }))
+  }
+
+  const handleSubmit = (e)=>{
+      e.preventDefault();
+
+
+    const formValues = new FormData();
+    formValues.append("heading", `New Inquiry Alert from ${formData.name}!`);
+    formValues.append("name", formData.name);
+    formValues.append("email", formData.email);
+    formValues.append("mobileNumber", formData.mobileNumber);
+     formValues.append("service", formData.service);
+    formValues.append("message", formData.message);
+    formValues.append("subject", "Contact Form");
+    formValues.append("toEmail", "durgaprasad@techpixe.com");
+
+    fetch("https://api.smartaihr.com/api/users/sendingEmail", {
+      method: "POST",
+      body: formValues,
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setFormData({
+          name: "",
+          mobileNumber: "",
+          email: "",
+          service:'',
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
+
+
+//-------------------------------------------Form Submition------------------------------------
+
   return (
     <div className='flex flex-col gap-6 md:gap-8 lg:gap-8 xl:gap-14 bg-[#FAF9F6]'>
       {/*  */}
@@ -120,15 +180,52 @@ const Contact = () => {
           {/* Form */}
           <div className='lg:col-span-8'>
               <h1 className='text-2xl md:text-3xl lg:text-4xl xl:text-[44px] mb-6 md:mb-6 lg:mb-10 xl:mb-20 font-semibold font-playfair'>Get In Touch</h1>
-              <form className='grid grid-cols-12 gap-4 md:gap-5'>
-                  <div className='col-span-12 md:col-span-6 flex flex-col'>
-                      <input className='xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED]' placeholder='  Your Name'/>
-                      <input className='xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED] my-5 md:my-[40px]' placeholder='  Your Email'/>
-                      <input className='xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED]' placeholder='  Your Phone'/>
+              <form className='grid grid-cols-12 gap-4 md:gap-5' onSubmit={handleSubmit}>
+                  <div className='col-span-12 md:col-span-6  flex flex-col gap-1.5 md:gap-2 lg:gap-2'>
+                      <input type='text' className='xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED]' placeholder='  Your Name'
+                      value={formData.name} 
+                      onChange={handleChange}
+                      name = 'name'
+                      required/>
+                      <input type='email' className='xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED] my-5 md:my-[40px]' placeholder='  Your Email' 
+                      value={formData.email}
+                      onChange={handleChange}
+                      name = 'email'
+                      required/>
+                      <input type='number' className='xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[50px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED]' placeholder='  Your Phone'
+                      value={formData.mobileNumber}
+                      onChange={handleChange}
+                      name ='mobileNumber'
+                      required/>
                   </div>
-                  <div className='col-span-12 md:col-span-6 flex flex-col items-start md:items-center justify-center gap-4 md:gap-7 lg:gap-12 xl:gap-20'>
-                    <textarea className='h-[100px] md:h-[140px] lg:h-[176px] xl:h-[150px] w-full px-2.5 md:px-[30px] md:py-[18px] shadow-lg bg-[#F4F2ED]' placeholder='Write Message'/>
-                    <button className='flex gap-[4px] items-center justify-center md:w-[200px]  lg:w-[183px] xl:w-[220px] bg-[#55833D] rounded-3xl px-8 md:px-[32px] py-3 md:py-[16px] text-[#fff] font-[Roboto]'>
+                  <div className='col-span-12 md:col-span-6 flex flex-col items-start md:items-center justify-center gap-6 md:gap-12 lg:gap-12 xl:gap-12'>
+
+                  <select name="service" className="xl:px-[24px] xl:py-[18px]  h-[40px] md:h-[51px] lg:h-[68px] xl:h-[78px] shadow-lg bg-[#F4F2ED] w-full "
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                  >
+                        <option value="" disabled className='text-gray-400'>Select a Service</option>
+                        <option value="Garden Maintainance">Garden Maintainance</option>
+                        <option value="Custom Garden Solutions">Custom Garden Solutions</option>
+                        <option value="Plantation and Sales">Plantation and Sales</option>
+                        <option value="Miyawaki Forest Development">Miyawaki Forest Development</option>
+                        <option value="Planning and Consulting">Planning and Consulting</option>
+                        <option value="Educational Workshops & Awareness">Educational Workshops & Awareness</option>
+                        <option value="Vatika Crations">Vatika Crations</option>
+                  </select>
+
+
+                    <textarea className='h-[100px] md:h-[140px] lg:h-[184px] xl:h-[150px] w-full px-2.5 md:px-[30px] md:py-[18px] shadow-lg bg-[#F4F2ED]' placeholder='Write Message'
+                    name = 'message'
+                    type='text'
+                    value={formData.message}
+                    onChange={handleChange}
+                    required/>
+
+                    
+
+                    <button type='submit' className='flex gap-[4px] items-center justify-center md:w-[200px]  lg:w-[183px] xl:w-[220px] bg-[#55833D] rounded-3xl px-8 md:px-[32px] py-3 md:py-[16px] text-[#fff] font-[Roboto]'>
                         Send
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                           <path d="M7.15833 14.3167L10.975 10.5L7.15833 6.675L8.33333 5.5L13.3333 10.5L8.33333 15.5L7.15833 14.3167Z" fill="white"/>

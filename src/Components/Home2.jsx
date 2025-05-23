@@ -61,6 +61,7 @@ import p_7 from "../assets/p_7.png";
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import ScrollContainer from 'react-indiana-drag-scroll';
+import { toast } from 'react-toastify';
 
 const Home2 = () => {
 
@@ -69,6 +70,7 @@ const Home2 = () => {
 const [formData,setFormData] = useState({
   name :'',
   email:'',
+  mobileNumber :'',
   service:'',
   message :''
 })
@@ -88,13 +90,40 @@ const handleChange = (e) => {
     e.preventDefault();
 
     const formValues = new FormData();
+    formValues.append("heading", `New Inquiry Alert from ${formData.name}!`);
     formValues.append('name',formData.name);
     formValues.append('email',formData.email);
+    formValues.append('mobileNumber',formData.mobileNumber);
     formValues.append('service',formData.service);
     formValues.append('message',formData.message);
     formValues.append("subject", "Contact Form");
     formValues.append("toEmail", "durgaprasad@techpixe.com");
 
+
+    fetch("https://api.smartaihr.com/api/users/sendingEmail", {
+      method: "POST",
+      body: formValues,
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        toast.success('Thank You For Contact Us !!')
+        setFormData({
+          name :'',
+          email:'',
+          mobileNumber:'',
+          service:'',
+          message :''
+        });
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        
+      });
 
 
   }
@@ -571,38 +600,72 @@ const bottomTopVariants1 = {
       </div>
 
       {/* 10th Section */}
-      <div className="px-4 md:px-8 lg:px-12 xl:px-20 ">
+      <div className="   px-4 md:px-8 lg:px-12 xl:px-20 ">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-playfair font-semibold mb-[32px]">Our GreenSpace Services</h1>
          <div className="grid grid-cols-12 gap-10">
-            <div className='col-span-8 md:col-span-4 '>
-                <div className='overflow-hidden'>
-                    <img src={himage_16} alt='himage_16' className="w-full object-cover object-center transition-transform duration-500 ease-in-out transform hover:scale-110"/>
-                </div>
-                <h1>tfyghjhj;ojopkjok;lk;k;kkk</h1>
-            </div>         
-
-            {/* <div className='relative w-full col-span-4 group overflow-hidden'>
-              <img src={himage_17} alt='himage_17' className="w-full h-auto" />
-                <motion.h1 className="absolute left-1/2 -translate-x-1/2 bottom-0  text-xl font-bold group-hover:bottom-1/2 transition-all duration-500"
-                    initial={{ opacity: 0, y: 50 }} whileHover={{ opacity: 1, y: '-50%' }} transition={{ duration: 0.5 }}
-                >
-                  tfyghjhj;ojopkjok;lk;k;kkk
-                  </motion.h1>
-            </div> */}
-
-
-              <div className='col-span-8 md:col-span-4'>
-                <div className='overflow-hidden'>
-                    <img src={himage_17} alt='himage_17' className="w-full object-cover object-center transition-transform duration-500 ease-in-out transform hover:scale-110"/>
-                </div>
-                <h1>tfyghjhj;ojopkjok;lk;k;kkk</h1>
+           {/* 1st */}
+           <div className="col-span-8 md:col-span-4 relative group overflow-hidden">
+              {/* Image wrapper */}
+              <div className="overflow-hidden">
+                <img
+                  src={himage_16}
+                  alt="himage_16"
+                  className="w-full object-cover object-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                />
               </div>
-              <div className='col-span-8 md:col-span-4'>
+
+            {/* Overlay text from bottom */}
+            <div className="absolute bottom-[0px] left-0 w-full transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out bg-black bg-opacity-60 text-white p-4">
+              <div className='flex flex-col justify-center items-center p-0 xl:p-2.5 gap-1 lg:gap-2 xl:gap-5'>
+                <h1 className='md:text-sm lg:text-lg xl:text-xl xl:font-bold font-playfair'>Landscape Design Basics</h1>
+                <p className='font-[Roboto] text-xs lg:text-sm xl:text-base'>Learn the fundamental principles of landscape design, from plant selection to layout planning, to create beautiful and sustainable outdoor spaces</p>
+              </div>
+            </div>
+         </div>
+        {/* 2nd */}
+        <div className="col-span-8 md:col-span-4 relative group overflow-hidden">
+              {/* Image wrapper */}
+              <div className="overflow-hidden">
+                <img
+                  src={himage_17}
+                  alt="himage_17"
+                  className="w-full object-cover object-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                />
+              </div>
+            {/* Overlay text from bottom */}
+            <div className="absolute bottom-[0px] left-0 w-full transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out bg-black bg-opacity-60 text-white p-4">
+              <div className='flex flex-col justify-center items-center p-0 xl:p-2.5 gap-1 lg:gap-2 xl:gap-5'>
+                <h1 className='md:text-sm lg:text-lg xl:text-xl xl:font-bold font-playfair'>Soil Preparation and Maintenance</h1>
+                <p className='font-[Roboto] text-xs lg:text-sm xl:text-base'>Ensure healthy plant growth with proper soil preparation techniques, nutrient management, and ongoing care for long-lasting fertility.</p>
+              </div>
+            </div>
+         </div>
+
+          {/* 3rd */}
+         <div className="col-span-8 md:col-span-4 relative group overflow-hidden">
+              {/* Image wrapper */}
+              <div className="overflow-hidden">
+                <img
+                  src={himage_18}
+                  alt="himage_18"
+                  className="w-full object-cover object-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                />
+              </div>
+            {/* Overlay text from bottom */}
+            <div className="absolute bottom-[0px] left-0 w-full transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out bg-black bg-opacity-60 text-white p-4">
+             <div className='flex flex-col justify-center items-center p-0 xl:p-2.5 gap-1 lg:gap-2 xl:gap-5'>
+                <h1 className='md:text-sm lg:text-lg xl:text-xl xl:font-bold font-playfair'>Watering Techniques and Conservation</h1>
+                <p className='font-[Roboto] text-xs lg:text-sm xl:text-base'>Optimize plant health with effective watering methods while conserving water through smart irrigation and sustainable practices</p>
+              </div>
+            </div>
+         </div>
+
+              {/* <div className='col-span-8 md:col-span-4'>
                   <div className='overflow-hidden'>
                       <img src={himage_18} alt='himage_18' className="w-full object-cover object-center transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                   </div>
                   <h1>tfyghjhj;ojopkjok;lk;k;kkk</h1>
-              </div>
+              </div> */}
           </div>
         </div> 
 
@@ -749,27 +812,52 @@ const bottomTopVariants1 = {
             <div className="">
               <form className="flex gap-2 md:gap-[20px]" onSubmit={handleSubmit}>
                 <div className="w-1/2 flex flex-col gap-3 md:gap-10">
-                  <input className="h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" type='text' name='name'
+                  <input className="pl-4 h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" type='text' name='name'
                   onChange={handleChange}
                   value={formData.name} 
                   placeholder="      Your Name"
+                  required
                   />
-                  <input className="h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" type='email' name='email'
+                  <input className="pl-4 h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" type='email' name='email'
                   onChange={handleChange}
                   value={formData.email} 
-                  placeholder="      Your Email
-                  " />
-                  <input className="h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" type='text' name='service'
-                  onChange={handleChange}
-                  value={formData.service} 
-                  placeholder="      drop down"
+                  placeholder="      Your Email"
+                  required 
                   />
-                </div>
-                <div className="w-1/2 flex flex-col gap-5.5 md:gap-14 lg:gap-13 xl:gap-12">
-                  <textarea className="h-[60px] md:h-[130px] lg:h-[160px] xl:h-[196px] lg:rounded-[18px] rounded-[24px] bg-[#F4F2ED]" type='text' name='message' 
+                  <input className="pl-4 h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED]" type='number' name='mobileNumber'
                   onChange={handleChange}
-                  value={formData.message}
-                  placeholder="     Write Message"/>
+                  value={formData.mobileNumber} 
+                  placeholder="      Your Phone No"
+                  required 
+                  />  
+                </div>
+                <div className="w-1/2 flex flex-col gap-5 md:gap-11 lg:gap-11 xl:gap-11">
+                  
+                  <select name="service" className="px-4 h-[30px] md:h-[52px] lg:h-[66px] xl:h-[78px] lg:rounded-[30px] rounded-[50px] bg-[#F4F2ED] px-4"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                  >
+                        <option value="" disabled className='text-gray-400'>Select a Service</option>
+                        <option value="Garden Maintainance">Garden Maintainance</option>
+                        <option value="Custom Garden Solutions">Custom Garden Solutions</option>
+                        <option value="Plantation and Sales">Plantation and Sales</option>
+                        <option value="Miyawaki Forest Development">Miyawaki Forest Development</option>
+                        <option value="Planning and Consulting">Planning and Consulting</option>
+                        <option value="Educational Workshops & Awareness">Educational Workshops & Awareness</option>
+                        <option value="Vatika Crations">Vatika Crations</option>
+                  </select>
+
+                <textarea className="h-[64px] md:h-[140px] lg:h-[168px] xl:h-[194px] 
+                                        bg-[#F4F2ED] lg:rounded-[18px] rounded-[24px] 
+                                        flex items-center justify-center text-center
+                                        pt-[10%] md:pt-[15%] lg:pt-[32%] xl:pt-[32%] 2xl:pt-[20%] px-4"
+                            name="message"
+                            onChange={handleChange}
+                            value={formData.message}
+                            placeholder="Write Message"
+                            required
+                    />
                   <button type='submit' className="bg-[#55833D] rounded-xl px-2 md:px-5 py-1.5 md:py-3 lg:px-6 lg:py-2  xl:px-8 xl:py-4 text-[#fff] text-sm md:text-base xl:text-xl">Make an Appointment</button>
                 </div>
                 </form>
