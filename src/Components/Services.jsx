@@ -17,6 +17,10 @@ import image_50 from'../assets/image_50.png'
 import image_51 from'../assets/image_51.png'
 import image_52 from'../assets/image_52.png'
 
+import flowerImage1 from'../assets/flowerImage1.png'
+import flowerImage2 from'../assets/flowerImage2.png'
+import flowerImage3 from'../assets/flowerImage3.png'
+
 const Services = () => {
 
   const navigate = useNavigate();
@@ -135,7 +139,7 @@ const Services = () => {
                 <div className='relative  col-span-12 md:col-span-6 lg:col-span-3' onClick={handleClick}>
                   <div className='h-[400px] md:h-[520px] lg:h-[520px] xl:h-[580px] shadow-xl  p-5 lg:p-4 xl:p-6 border border-[#55833D] border-2 border-solid'>
                     <div className='overflow-hidden'>
-                        <img src={image_43} alt='image_43' className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
+                        <img src={image_43} alt='image_43' loading="lazy" className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
                     </div>
                     <h1 className='py-2 md:py-3 lg:py-3 xl:py-5  lg:text-base xl:text-lg font-bold font-playfair text-center'>Educational Workshops & Awareness:</h1>
                     <h1 className='text-sm md:text-base lg:text-sm xl:text-base font-medium font-[Roboto] '>Conducting workshops on plant care, organic gardening, and biodiversity
@@ -143,7 +147,7 @@ const Services = () => {
                     </h1>
                   </div>
                   {/*  */}
-                  <div className=' absolute bottom-[-14px] left-1/2'>
+                  <div className=' absolute bottom-[-14px]  left-[150px] md:left-[154px] lg:left-[98px] xl:left-[140px] 2xl:left-1/2'>
                       <div className='flex items-center justify-center w-8 h-8 rounded-full bg-[#55833D]'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                           <path d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z" fill="white"/>
@@ -158,13 +162,13 @@ const Services = () => {
                 <div className='relative col-span-12 md:col-span-6 lg:col-span-3' onClick={handleClick}>
                     <div className='h-[360px] md:h-[520px] lg:h-[520px] xl:h-[580px] shadow-xl p-5 lg:p-4 xl:p-6 border border-[#55833D] border-2 border-solid'>
                             <div className='overflow-hidden'>
-                                <img src={image_44} alt='image_44' className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
+                                <img src={image_44} alt='image_44' loading="lazy" className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
                             </div>
                             <h1 className='py-2 md:py-3 lg:py-3 xl:py-5 lg:text-base xl:text-lg font-bold font-playfair text-center'>Garden Maintenance</h1>
                             <h1 className='text-sm md:text-base lg:text-sm xl:text-base font-medium font-[Roboto] '>Long-term care and growth management.</h1>
                         </div>
                         {/*  */}
-                        <div className=' absolute bottom-[-14px] left-1/2'>
+                        <div className=' absolute bottom-[-14px] left-[150px] md:left-[154px] lg:left-[98px] xl:left-[140px] 2xl:left-1/2'>
                             <div className='flex items-center justify-center w-8 h-8 rounded-full bg-[#55833D]'>
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z" fill="white"/>
@@ -177,12 +181,12 @@ const Services = () => {
               <div className='relative col-span-12 md:col-span-6 lg:col-span-3' onClick={handleClick}>
                 <div className='h-[380px] md:h-[520px] lg:h-[520px] xl:h-[580px] shadow-xl p-5 lg:p-4 xl:p-6 border border-[#55833D] border-2 border-solid'>
                   <div className='overflow-hidden'>
-                        <img src={image_45} alt='image_45' className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
+                        <img src={image_45} alt='image_45' loading="lazy" className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
                     </div>
                     <h1 className='py-2 md:py-3 lg:py-3 xl:py-5 lg:text-base xl:text-lg font-bold font-playfair text-center'>Planning and Consulting</h1>
                     <h1 className='text-sm md:text-base lg:text-sm xl:text-base font-medium font-[Roboto]'>Landscape designs for residential and commercial projects</h1>
                 </div>
-                <div className=' absolute bottom-[-14px] left-1/2'>
+                <div className=' absolute bottom-[-14px] left-[150px] md:left-[154px] lg:left-[98px] xl:left-[140px] 2xl:left-1/2'>
                       <div className='flex items-center justify-center w-8 h-8 rounded-full bg-[#55833D]'>
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z" fill="white"/>
@@ -196,7 +200,7 @@ const Services = () => {
                 <div className='relative col-span-12 md:col-span-6 lg:col-span-3' onClick={handleClick}> 
                   <div className='h-[480px] md:h-[520px] lg:h-[520px] xl:h-[580px] shadow-xl p-5 lg:p-4 xl:p-6 border border-[#55833D] border-2 border-solid'>
                     <div className='overflow-hidden'>
-                          <img src={image_46} alt='image_46' className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
+                          <img src={image_46} alt='image_46' loading="lazy" className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
                       </div>
                       <h1 className='py-2 md:py-3 lg:py-3 xl:py-5 lg:text-base xl:text-lg font-bold font-playfair text-center'>Vatika Creations</h1>
                       <h1 className='text-sm md:text-base lg:text-sm xl:text-base font-medium font-[Roboto]'>
@@ -206,7 +210,7 @@ const Services = () => {
                           • Panchvati Vatika: Mythological plants like Banyan, Peepal, and Amla And Many More
                       </h1>
                   </div>
-                  <div className=' absolute bottom-[-14px] left-1/2 '>
+                  <div className=' absolute bottom-[-14px] left-[150px] md:left-[154px] lg:left-[98px] xl:left-[140px] 2xl:left-1/2 '>
                       <div className='flex items-center justify-center w-8 h-8 rounded-full bg-[#55833D]'>
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z" fill="white"/>
@@ -215,15 +219,15 @@ const Services = () => {
                   </div>   
                 </div>
                 {/* 5th */}
-                <div className='relative col-span-12 md:col-span-6 lg:col-span-3 lg:col-start-2 ' onClick={handleClick}>
+                <div className='relative col-span-12 md:col-span-6 lg:col-span-3 lg:col-start-1' onClick={handleClick}>
                     <div className='h-[380px] md:h-[520px] lg:h-[520px] xl:h-[580px]   shadow-xl p-5 lg:p-4 xl:p-6 border border-[#55833D] border-2 border-solid'>
                       <div className='overflow-hidden'>
-                            <img src={image_50} alt='image_50' className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
+                            <img src={image_50} alt='image_50' loading="lazy" className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
                         </div>
                         <h1 className='py-2 md:py-3 lg:py-3 xl:py-5 lg:text-base xl:text-lg font-bold font-playfair text-center'>Plantation and Sales</h1>
                         <h1 className='text-sm md:text-base lg:text-sm xl:text-base font-medium font-[Roboto]'>A wide range of plants for personal, commercial, and public spaces.</h1>
                     </div>
-                    <div className=' absolute bottom-[-14px] left-1/2'>
+                    <div className=' absolute bottom-[-14px] left-[150px] md:left-[154px] lg:left-[98px] xl:left-[140px] 2xl:left-1/2'>
                       <div className='flex items-center justify-center w-8 h-8 rounded-full bg-[#55833D]'>
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z" fill="white"/>
@@ -235,12 +239,12 @@ const Services = () => {
                 <div className='relative col-span-12 md:col-span-6 lg:col-span-3' onClick={handleClick}>
                   <div className='h-[380px] md:h-[520px] lg:h-[520px] xl:h-[580px] shadow-xl p-5 lg:p-4 xl:p-6 border border-[#55833D] border-2 border-solid'>
                     <div className='overflow-hidden'>
-                          <img src={image_51} alt='image_45' className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
+                          <img src={image_51} alt='image_45' loading="lazy" className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
                       </div>
                       <h1 className='py-2 md:py-3 lg:py-3 xl:py-5 lg:text-base xl:text-lg font-bold font-playfair text-center'>Miyawaki Forest Development</h1>
                       <h1 className='text-sm md:text-base lg:text-sm xl:text-base font-medium font-[Roboto]'>Dense, multi-layered forests to enhance biodiversity.</h1>
                   </div>
-                  <div className=' absolute bottom-[-14px] left-1/2'>
+                  <div className=' absolute bottom-[-14px] left-[150px] md:left-[154px] lg:left-[98px] xl:left-[140px] 2xl:left-1/2'>
                       <div className='flex items-center justify-center w-8 h-8 rounded-full bg-[#55833D]'>
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z" fill="white"/>
@@ -252,7 +256,7 @@ const Services = () => {
                 <div className='relative col-span-12 md:col-span-6 lg:col-span-3 md:col-start-4' onClick={handleClick}>
                   <div className='h-[420px] md:h-[520px] lg:h-[520px] xl:h-[580px] shadow-xl p-5 lg:p-4 xl:p-6 border border-[#55833D] border-2 border-solid'>
                     <div className='overflow-hidden'>
-                          <img src={image_52} alt='image_45' className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
+                          <img src={image_52} alt='image_45' loading="lazy" className='lg:h-[200px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110'/>
                       </div>
                       <h1 className='py-2 md:py-3 lg:py-3 xl:py-5 lg:text-base xl:text-lg font-bold font-playfair text-center'>Custom Garden Solutions</h1>
                       <h1 className='text-sm md:text-base lg:text-sm xl:text-base font-medium font-[Roboto]'>
@@ -262,7 +266,7 @@ const Services = () => {
                         • Outdoor Landscaping
                       </h1>
                   </div>
-                  <div className=' absolute bottom-[-14px] left-1/2  transform -translate-x-1/2'>
+                  <div className=' absolute bottom-[-14px] left-[150px] md:left-[154px] lg:left-[98px] xl:left-[140px] 2xl:left-1/2  '>
                       <div className='flex items-center justify-center w-8 h-8 rounded-full bg-[#55833D]'>
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z" fill="white"/>
@@ -270,11 +274,27 @@ const Services = () => {
                       </div>
                   </div>  
                 </div>
+                {/* -- */}
+                <div className='lg:col-span-3 p-10 xl:p-10 hidden lg:block '>
+                  <img src={flowerImage3} alt='flowerImage1' className='h-[400px] w-[200px] xl:w-auto xl:h-[500px] object-revert xl:object-cover object-center  '/>
+                </div>
+                {/* -- */}
             </div>
 
             
           </div>
       </div>
+
+
+
+
+
+
+{/* pppppppppppppppppp */}
+
+
+
+
 
 
     {/*  */}

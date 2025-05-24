@@ -15,7 +15,7 @@ const Sidebar = ({setSidebarOpen}) => {
         </button>
         {/*  */}
        <div className='flex flex-col  hidden lg:block'>
-            <img src={image_89} alt='image_89' className='w-[160px] h-[60px] mb-10'/>
+            <img src={image_89} alt='image_89' loading="lazy" className='w-[160px] h-[60px] mb-10'/>
             <p className='text-[#000] text-lg font-semibold font-playfair '>
                 We take pride in customizing our services to meet the needs and budgets of each individual customer.
             </p>
@@ -41,7 +41,7 @@ const Sidebar = ({setSidebarOpen}) => {
                     {/*  */}  {/* Green Circle */} {/* White Phone Icon */}
                     <div className="flex items-center gap-[12px] py-[20px]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                        <circle cx="16" cy="16" r="16" fill="#55833D"/>
+                            <circle cx="16" cy="16" r="16" fill="#55833D"/>
                             <g transform="translate(7,7)" scale="0.75">
                                 <path d="M16.875 0.562481C16.875 0.466559 16.8505 0.372231 16.8037 0.288462C16.757 0.204693 16.6896 0.134266 16.608 0.0838741C16.5264 0.0334821 16.4332 0.00479935 16.3374 0.000551828C16.2416 -0.00369569 16.1463 0.0166331 16.0605 0.0596062L7.0605 4.55961C6.96718 4.60637 6.88872 4.67817 6.83388 4.76698C6.77905 4.85579 6.75 4.95811 6.75 5.06248V8.59498L0.38475 10.7167C0.272788 10.754 0.17539 10.8256 0.106341 10.9213C0.0372916 11.017 8.96026e-05 11.132 0 11.25L0 17.4375C0 17.5867 0.0592632 17.7297 0.164752 17.8352C0.270242 17.9407 0.413316 18 0.5625 18H10.6875C10.8367 18 10.9798 17.9407 11.0852 17.8352C11.1907 17.7297 11.25 17.5867 11.25 17.4375V15.75H12.375V17.4375C12.375 17.5867 12.4343 17.7297 12.5398 17.8352C12.6452 17.9407 12.7883 18 12.9375 18H16.3125C16.4617 18 16.6048 17.9407 16.7102 17.8352C16.8157 17.7297 16.875 17.5867 16.875 17.4375V0.562481ZM2.25 12.375H3.375V13.5H2.25V12.375ZM4.5 12.375H5.625V13.5H4.5V12.375ZM3.375 14.625V15.75H2.25V14.625H3.375ZM4.5 14.625H5.625V15.75H4.5V14.625ZM14.625 3.37498V4.49998H13.5V3.37498H14.625ZM9 5.62498H10.125V6.74998H9V5.62498ZM10.125 7.87498V8.99998H9V7.87498H10.125ZM9 10.125H10.125V11.25H9V10.125ZM11.25 10.125H12.375V11.25H11.25V10.125ZM10.125 12.375V13.5H9V12.375H10.125ZM11.25 12.375H12.375V13.5H11.25V12.375ZM14.625 10.125V11.25H13.5V10.125H14.625ZM13.5 12.375H14.625V13.5H13.5V12.375ZM11.25 7.87498H12.375V8.99998H11.25V7.87498ZM14.625 7.87498V8.99998H13.5V7.87498H14.625ZM12.375 5.62498V6.74998H11.25V5.62498H12.375ZM13.5 5.62498H14.625V6.74998H13.5V5.62498Z" fill="white"/>
                             </g>
@@ -66,7 +66,7 @@ const Sidebar = ({setSidebarOpen}) => {
 
             {/* Tab Screen */}
             <div className='flex block lg:hidden '>
-                <img src={image_89} alt='image_89' className='w-[160px] h-[50px] md:h-[60px]'/>
+                <img src={image_89} alt='image_89' loading="lazy" className='w-[160px] h-[50px] md:h-[60px]'/>
                 {/*  */}
                 <button className='flex lg:hidden' onClick={()=>setSidebarOpen(false)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 54 54" fill="none">

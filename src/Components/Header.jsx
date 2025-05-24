@@ -45,6 +45,7 @@ const handleContact = ()=>{
                 <img
                   src={mewarlogo1}
                   alt="mewarlogo"
+                  loading="lazy"
                   className="h-[35px] md:h-[60px] lg:h-[70px] object-cover"
                 />
               </div>

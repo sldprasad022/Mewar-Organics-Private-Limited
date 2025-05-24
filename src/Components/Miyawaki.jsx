@@ -100,14 +100,14 @@ const Miyawaki = () => {
                 <h1 className='mb-2 md:mb-5 lg:mb-[26px] text-[#000] font-playfair text-2xl md:text-2xl lg:text-[28px] font-medium'>Image Gallery</h1>
                 <div className='grid grid-cols-12 gap-2  md:gap-4 lg:gap-10'>
                     <div className='col-span-6'>
-                        <img src={image_92} alt='image_92' className='h-[300px] md:h-auto'/>
+                        <img src={image_92} alt='image_92' loading="lazy" className='h-[300px] md:h-auto'/>
                     </div>
                     <div className='col-span-6'>
                         <div className='grid grid-cols-2 gap-2 md:gap-4 lg:gap-5'>
-                            <img src={image_93} alt='image_93' className='h-[146px] md:h-auto'/>
-                            <img src={image_94} alt='image_94' className='h-[146px] md:h-auto'/>
-                            <img src={image_95} alt='image_95' className='h-[146px] md:h-auto'/>
-                            <img src={image_96} alt='image_96' className='h-[146px] md:h-auto'/>
+                            <img src={image_93} alt='image_93' loading="lazy" className='h-[146px] md:h-auto'/>
+                            <img src={image_94} alt='image_94' loading="lazy" className='h-[146px] md:h-auto'/>
+                            <img src={image_95} alt='image_95' loading="lazy" className='h-[146px] md:h-auto'/>
+                            <img src={image_96} alt='image_96' loading="lazy" className='h-[146px] md:h-auto'/>
                         </div>
                     </div>
                 </div>

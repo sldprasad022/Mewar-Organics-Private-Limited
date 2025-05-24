@@ -7,6 +7,7 @@ import image_88 from "../assets/image_88.png";
 
 import { easeInOut, motion } from "framer-motion";
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
 
@@ -53,6 +54,7 @@ const Contact = () => {
         return response.json();
       })
       .then((data) => {
+        toast.success('Thank You For Contact Us !!')
         setFormData({
           name: "",
           mobileNumber: "",
@@ -119,7 +121,7 @@ const Contact = () => {
 
           <div className='mt-[40px] lg:mt-[74px] flex flex-col md:flex-row gap-8 md:gap-15 justify-start  justify-center items-start md:items-center pl-[16px] md:pl-0'>
               <div className='w-[200px] h-[200px] rounded-full bg-[#FFF] flex items-center justify-center' >
-                    <motion.img src={image_87} alt="image_87" className="w-[120px] h-[102px]" animate={{scale: [1,2], rotate: [0,0], borderRadius: ["0%"]}}
+                    <motion.img src={image_87} alt="image_87" loading="lazy" className="w-[120px] h-[102px]" animate={{scale: [1,2], rotate: [0,0], borderRadius: ["0%"]}}
                         transition={{duration: 5, ease: "easeInOut", repeat: Infinity, repeatDelay: 1}}/>
               </div>
 

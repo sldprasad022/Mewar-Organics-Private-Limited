@@ -35,6 +35,10 @@ import image_21 from "../assets/image_21.png";
 import image_22 from "../assets/image_22.png";
 import image_23 from "../assets/image_23.png";
 
+import image_192 from "../assets/image_192.png";
+import image_212 from "../assets/image_212.png";
+
+
 import image_24 from "../assets/image_24.png";
 import image_25 from "../assets/image_25.png";
 import image_26 from "../assets/image_26.png";
@@ -324,7 +328,7 @@ const bottomTopVariants1 = {
           <div className='w-full flex flex-col lg:flex-row items-center gap-5 md:gap-5 lg:gap-10'>
               {/* 2-1 */}
               <motion.div className="overflow-hidden w-full lg:w-1/2" variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
-                  <img src={himage_1} alt="himage_1" className="md:h-[280px] w-full lg:h-[420px] xl:h-auto  object-cover transition-transform duration-700 ease-in-out transform hover:scale-110"/>
+                  <img src={himage_1} alt="himage_1" loading="lazy" className="md:h-[280px] w-full lg:h-[420px] xl:h-auto  object-cover transition-transform duration-700 ease-in-out transform hover:scale-110"/>
               </motion.div>
               {/* 2-2 */}
               <motion.p className="w-full lg:w-1/2 text-sm md:text-lg lg:text-xl font-[Roboto]" variants={rightSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
@@ -348,7 +352,7 @@ const bottomTopVariants1 = {
         <div className='w-full flex flex-col lg:flex-row items-center gap-5 md:gap-10'>
             {/*3-1 */}
             <motion.div className="overflow-hidden w-full lg:w-1/2" variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
-                  <img src={himage_3} alt="himage_3" className="md:h-[360px] w-full lg:h-[690px]  xl:h-auto  object-cover transition-transform duration-700 ease-in-out transform hover:scale-110"/>
+                  <img src={himage_3} alt="himage_3" loading="lazy" className="md:h-[360px] w-full lg:h-[690px]  xl:h-auto  object-cover transition-transform duration-700 ease-in-out transform hover:scale-110"/>
             </motion.div>
             {/* 3-2 */}
              <motion.div className="w-full lg:w-1/2 flex flex-col gap-3 md:gap-3 lg:gap-6" variants={rightSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
@@ -380,11 +384,11 @@ const bottomTopVariants1 = {
 
       {/* 4th Section */}
 
-      <img src={himage_4} alt="himage_4" className="w-full md:h-[270px] lg:h-auto xl:h-[409px] lg:px-12 xl:px-20 bg-cover bg-center  bg-cover bg-center"/>
+      <img src={himage_4} alt="himage_4" loading="lazy" className="w-full md:h-[270px] lg:h-auto xl:h-[409px] lg:px-12 xl:px-20 bg-cover bg-center  bg-cover bg-center"/>
 
       {/* 5th Section ------------------------------------------------------------ Scrollbar Functionality with out java script */}
            
-      <img src={himage_6} alt="himage_6" className="px-4 md:px-8 lg:px-12 xl:px-20 w-full"/>
+      <img src={himage_6} alt="himage_6" loading="lazy" className="px-4 md:px-8 lg:px-12 xl:px-20 w-full"/>
 
       <div className='px-4 md:px-8 lg:px-12 xl:px-20'>
         <h1 className='text-center lg:text-xl xl:text-[28px] font-[Roboto] text-[#55833D] font-semibold'>Services</h1>
@@ -404,7 +408,7 @@ const bottomTopVariants1 = {
       {/* 6th Section */}
       <div className='px-4 md:px-8 lg:px-12 xl:px-20 w-full flex flex-col lg:flex-row gap-3 md:gap-5 lg:gap-10 items-center overflow-hidden'>
           <motion.div className='overflow-hidden w-full lg:w-1/2' variants={bottomTopVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
-             <img src={himage_7} alt="himage_7" className="md:h-[280px] lg:h-[700px] xl:h-[532px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+             <img src={himage_7} alt="himage_7" loading="lazy" className="md:h-[280px] lg:h-[700px] xl:h-[532px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
           </motion.div>
           <motion.div className='w-full lg:w-1/2 flex flex-col gap-4 lg:gap-9' variants={bottomTopVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
               <p className="text-sm md:text-lg lg:text-xl font-[Roboto]">
@@ -428,7 +432,7 @@ const bottomTopVariants1 = {
             <div className="flex justify-center">
                 <button className="bg-[#55833D] hover:bg-zinc-800 text-sm md:text-lg text-white  px-5 py-2 md:py-3  lg:py-4  xl:py-5 rounded-lg flex items-center  gap-[2px]" onClick={handleClickService}>
                     Start a Project
-                    <img src={himagearrow_8} alt="himagearrow_8" className="h-[24px]"/>
+                    <img src={himagearrow_8} alt="himagearrow_8" loading="lazy" className="h-[24px]"/>
                  </button> 
             </div>                       
           </motion.div>
@@ -442,7 +446,7 @@ const bottomTopVariants1 = {
           {/* 7-1-1 */}
           <motion.div className='col-span-12 lg:col-span-4' variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
               <div className='overflow-hidden '>
-                  <img src={himage_8} alt="himage_8" className="w-full md:h-[264px] lg:h-[350px]  xl:h-[368px] 2xl:h-[300px] rounded-xl object-cover transition-transform duration-500 ease-in-out transform hover:scale-110" />
+                  <img src={himage_8} alt="himage_8" loading="lazy" className="w-full md:h-[264px] lg:h-[350px]  xl:h-[368px] 2xl:h-[300px] rounded-xl object-cover transition-transform duration-500 ease-in-out transform hover:scale-110" />
               </div>
               <div className="p-1 md:p-[6px] xl:p-[10px]">
                 <h1 className="lg:text-base xl:text-lg font-semibold text-center  md:pb-[10px] xl:pb-[28px] font-[Roboto]">
@@ -475,17 +479,17 @@ const bottomTopVariants1 = {
                 fromancient mythology – Peepal, Banyan,Amla, Ashoka, and
                 Belpatra.Designed for spiritual reflection and heritage
                 preservation, this space combines nature with mythology,offering
-                a serene atmosphere formeditation and cultural storytelling.
+                a serene atmosphere formeditation and cultural story telling.
               </p>
             </div>
               <div className='overflow-hidden '>
-                  <img src={himage_9} alt="himage_9" className="w-full md:h-[264px] lg:h-[350px]  xl:h-[368px] 2xl:h-[300px]  rounded-xl  object-cover transition-transform duration-500 ease-in-out transform hover:scale-110" />
+                  <img src={himage_9} alt="himage_9" loading="lazy" className="w-full md:h-[264px] lg:h-[350px]  xl:h-[368px] 2xl:h-[300px]  rounded-xl  object-cover transition-transform duration-500 ease-in-out transform hover:scale-110" />
               </div>
           </motion.div>
           {/* 7-1-3 */}
           <motion.div className='col-span-12 lg:col-span-4' variants={rightSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
             <div className="overflow-hidden">
-              <img src={himage_10} alt="himage_10" className="w-full md:h-[264px] lg:h-[350px]  xl:h-[368px] 2xl:h-[300px]  rounded-xl object-cover transition-transform duration-500 ease-in-out transform hover:scale-110" />
+              <img src={himage_10} alt="himage_10" loading="lazy" className="w-full md:h-[264px] lg:h-[350px]  xl:h-[368px] 2xl:h-[300px]  rounded-xl object-cover transition-transform duration-500 ease-in-out transform hover:scale-110" />
             </div>
             <div className="p-1 md:p-[6px] xl:p-[10px]">
               <h1 className="lg:text-base xl:text-lg font-semibold text-center font-[Roboto] md:pb-[10px] xl:pb-[28px]">Balcony Garden<br />
@@ -497,7 +501,7 @@ const bottomTopVariants1 = {
                      featuringornamental plants like Lipstick Plant,Chandni, Ferns,
                      Money Plant, andPeace Lily. Designed to bringgreenery into small
                      living spaces,this project focuses on aestheticcharm while
-                     requiring minimalmaintenance.         
+                     requiring minimal maintenance.         
                   </p>
             </div>                                         
           </motion.div>
@@ -528,7 +532,7 @@ const bottomTopVariants1 = {
             {/* 1st */}
                <div className="col-span-12 md:col-span-6 lg:col-span-4 border border-2 lg:border-4 border-[#55833D] border-dashed flex flex-col justify-between h-full gap-3 md:gap-5 text-center p-4 md:px-4 lg:px-12 md:py-5 xl:px-16 xl:py-10 rounded-3xl ">
                 <div className="flex justify-center">
-                  <img src={himage_12}  alt="himage_12" className="w-[150px] h-[150px]"/>
+                  <img src={himage_12}  alt="himage_12" loading="lazy" className="w-[150px] h-[150px]"/>
                 </div>            
                 <h1 className="lg:text-xl xl:text-2xl text-[#55833D] font-playfair">Forest & Native Plants</h1>           
                  <p className="text-sm md:text-base xl:text-lg font-[Roboto]">
@@ -545,7 +549,7 @@ const bottomTopVariants1 = {
               {/* 2nd */}
               <div className="col-span-12 md:col-span-6 lg:col-span-4 border border-2 lg:border-4 border-[#55833D] border-dashed flex flex-col justify-between h-full gap-3 md:gap-5 text-center p-4 md:px-4 lg:px-12 md:py-5 xl:px-16 xl:py-10 rounded-3xl ">
                 <div className="flex justify-center">
-                  <img src={himage_13} alt="himage_13" className="w-[150px] h-[150px]"/>
+                  <img src={himage_13} alt="himage_13" loading="lazy" className="w-[150px] h-[150px]"/>
                 </div>              
                  <h1 className="lg:text-xl xl:text-2xl text-[#55833D] font-playfair">Flower Plants</h1>              
                  <p className="text-sm md:text-base xl:text-lg font-[Roboto]">
@@ -562,7 +566,7 @@ const bottomTopVariants1 = {
               {/* 3rd */}
               <div className="col-span-12 md:col-span-6 md:col-start-4 lg:col-span-4 border border-2 lg:border-4 border-[#55833D] border-dashed flex flex-col justify-between h-full gap-3 md:gap-5 text-center p-4  md:px-4 lg:px-12 md:py-5 xl:px-16 xl:py-10 rounded-3xl ">
                 <div className="flex justify-center">
-                  <img src={himage_14} alt="image_14" className="w-[150px] h-[150px]"/>
+                  <img src={himage_14} alt="image_14" loading="lazy" className="w-[150px] h-[150px]"/>
                 </div>              
                 <h1 className="lg:text-xl xl:text-2xl text-[#55833D] font-playfair">Fruits Plants</h1>              
                 <p className="text-sm md:text-base xl:text-lg font-[Roboto]">
@@ -595,22 +599,23 @@ const bottomTopVariants1 = {
             </p>
           </motion.div>
           <motion.div className='w-full lg:w-1/2 overflow-hidden' variants={rightSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
-             <img src={himage_15} alt="himage_15" className="w-full md:h-[274px] lg:h-[420px]  xl:h-auto  object-cover object-center transition-transform duration-500 ease-in-out transform hover:scale-110" />
+             <img src={himage_15} alt="himage_15" loading="lazy" className="w-full md:h-[274px] lg:h-[420px]  xl:h-auto  object-cover object-center transition-transform duration-500 ease-in-out transform hover:scale-110" />
           </motion.div>
       </div>
 
       {/* 10th Section */}
       <div className="   px-4 md:px-8 lg:px-12 xl:px-20 ">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-playfair font-semibold mb-[32px]">Our GreenSpace Services</h1>
-         <div className="grid grid-cols-12 gap-10">
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10">
            {/* 1st */}
-           <div className="col-span-8 md:col-span-4 relative group overflow-hidden">
+           <div className=" relative group overflow-hidden">
               {/* Image wrapper */}
               <div className="overflow-hidden">
                 <img
                   src={himage_16}
                   alt="himage_16"
-                  className="w-full object-cover object-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                  loading="lazy"
+                  className="h-[340px] md:h-auto w-full object-cover object-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"
                 />
               </div>
 
@@ -623,13 +628,14 @@ const bottomTopVariants1 = {
             </div>
          </div>
         {/* 2nd */}
-        <div className="col-span-8 md:col-span-4 relative group overflow-hidden">
+        <div className=" relative group overflow-hidden">
               {/* Image wrapper */}
               <div className="overflow-hidden">
                 <img
                   src={himage_17}
                   alt="himage_17"
-                  className="w-full object-cover object-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                  loading="lazy"
+                  className="h-[340px] md:h-auto w-full object-cover object-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"
                 />
               </div>
             {/* Overlay text from bottom */}
@@ -642,13 +648,14 @@ const bottomTopVariants1 = {
          </div>
 
           {/* 3rd */}
-         <div className="col-span-8 md:col-span-4 relative group overflow-hidden">
+         <div className=" relative group overflow-hidden">
               {/* Image wrapper */}
               <div className="overflow-hidden">
                 <img
                   src={himage_18}
                   alt="himage_18"
-                  className="w-full object-cover object-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+                  loading="lazy"
+                  className="h-[340px] md:h-auto w-full object-cover object-center transition-transform duration-500 ease-in-out transform group-hover:scale-110"
                 />
               </div>
             {/* Overlay text from bottom */}
@@ -681,21 +688,21 @@ const bottomTopVariants1 = {
           {/* 11-2 */}
           <div className="mb-[32px] grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
             <div className="overflow-hidden">
-              <img src={image_20} alt='himage_20' className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+              <img src={image_20} alt='himage_20' loading="lazy" className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
             </div>
             <div className="overflow-hidden">
-              <img src={image_21} alt='himage_21' className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
-            </div>           
-            <div className="overflow-hidden">
-              <img src={image_22} alt='himage_22' className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+              <img src={image_212} alt='himage_212' loading="lazy" className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
             </div>
             <div className="overflow-hidden">
-              <img src={image_23} alt='himage_23' className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+              <img src={image_192} alt='himage_22' loading="lazy" className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+            </div>
+            <div className="overflow-hidden">
+              <img src={image_23} alt='himage_23' loading="lazy" className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
             </div>                    
           </div>
           {/*11-3 */}
           <div className="hidden md:flex justify-end absolute  top-[-30px] right-[0px]">
-            <img src={himage_19} alt='himage_19' className="bg-cover bg-center h-[438px] w-[542px]"/>
+            <img src={himage_19} alt='himage_19' loading="lazy" className="bg-cover bg-center h-[438px] w-[542px]"/>
           </div>            
       </div>
 
@@ -708,7 +715,7 @@ const bottomTopVariants1 = {
             {/*  */}
               <div className="bg-lime-300 p-5 lg:py-6 lg:px-6 xl:py-12 xl:px-10 rounded-lg" style={{background: "linear-gradient(180deg, rgba(85, 131, 61, 0.20) 0%, rgba(85, 131, 61, 0.60) 48.56%, #55833D 90.87%)"}}>
                 <div className="overflow-hidden">
-                  <img src={image_24} alt='image_24' className=" object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                  <img src={image_24} alt='image_24' loading="lazy" className=" object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                 </div>
                 <h1 className="text-center text-[#FFF] font-bold font-[Roboto] md:text-lg xl:text-xl my-2 md:my-4 tracking-wide">Native Plant Advocacy</h1>
                 <h1 className="text-center text-[#FFF] font-[Roboto] text-base">Focus on local and sustainable plant species</h1>
@@ -716,7 +723,7 @@ const bottomTopVariants1 = {
               {/*  */}
               <div className="bg-lime-300 p-5 lg:py-6 lg:px-6 xl:py-12 xl:px-10 rounded-lg" style={{background: "linear-gradient(180deg, rgba(85, 131, 61, 0.20) 0%, rgba(85, 131, 61, 0.60) 48.56%, #55833D 90.87%)"}}>
                 <div className="overflow-hidden">
-                  <img src={image_25} alt='image_25' className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/> 
+                  <img src={image_25} alt='image_25' loading="lazy" className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/> 
                 </div>
                 <h1 className="text-center text-[#FFF] font-[Roboto] font-bold md:text-lg xl:text-xl my-2 md:my-4 tracking-wide">Innovative Solutions</h1>
                 <h1 className="text-center text-[#FFF] font-[Roboto] text-base">Customized gardens / Vatikas for every need.</h1>
@@ -724,7 +731,7 @@ const bottomTopVariants1 = {
               {/*  */}
               <div className="bg-lime-300 p-5 lg:py-6 lg:px-6 xl:py-12 xl:px-10 rounded-lg" style={{background: "linear-gradient(180deg, rgba(85, 131, 61, 0.20) 0%, rgba(85, 131, 61, 0.60) 48.56%, #55833D 90.87%)"}}>
                 <div className="overflow-hidden">
-                  <img src={image_26} alt='image_26' className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                  <img src={image_26} alt='image_26' loading="lazy" className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                 </div>
                 <h1 className="text-center text-[#FFF] font-[Roboto] font-bold md:text-lg xl:text-xl my-2 md:my-4 tracking-wide">Expertise in Landscaping</h1>
                 <h1 className="text-center text-[#FFF] font-[Roboto] text-base">Skilled professionals to guide every project.</h1>
@@ -732,7 +739,7 @@ const bottomTopVariants1 = {
               {/*  */}
               <div className="bg-lime-300 p-5 lg:py-6 lg:px-6 xl:py-12 xl:px-10 rounded-lg" style={{background: "linear-gradient(180deg, rgba(85, 131, 61, 0.20) 0%, rgba(85, 131, 61, 0.60) 48.56%, #55833D 90.87%)"}}>
                 <div className="overflow-hidden">
-                  <img src={image_27} alt='image_27' className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                  <img src={image_27} alt='image_27' loading="lazy" className="object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                 </div>
                 <h1 className="text-center text-[#FFF] font-[Roboto] font-bold md:text-lg xl:text-xl my-2 md:my-4 tracking-wide">Environmentally Conscious</h1>
                 <h1 className="text-center text-[#FFF] font-[Roboto] text-base">Practices that prioritize soil health and water conservation.</h1>
@@ -745,10 +752,10 @@ const bottomTopVariants1 = {
         <div className='px-4 md:px-8 lg:px-12 xl:px-20'>
           <motion.h1 className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-playfair font-semibold mb-3 md:mb-8' variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>Unqiue,eite & rare</motion.h1>
           <div className='w-full flex flex-col lg:flex-row gap-1 md:gap-10'>
-            <motion.img src={image_28} alt='image_28' className='h-[400px] lg:h-auto w-full lg:w-1/2' variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}/>
+            <motion.img src={image_28} alt='image_28' loading="lazy" className='h-[400px] lg:h-auto w-full lg:w-1/2' variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}/>
             <motion.div className='w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8' variants={rightSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
               <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-playfair font-semibold">Living Art:</h1>
-              <img src={image_29} alt='image_29' className="w-[281px] h-[80px]"/>
+              <img src={image_29} alt='image_29' loading="lazy" className="w-[281px] h-[80px]"/>
               <h1 className="mt-1 lg:mt-[12px] text-lg lg:text-xl  font-playfair font-semibold ">Breaking New Ground in Rajasthan and India</h1>
               <p className="text-sm md:text-lg lg:text-xl font-[Roboto]">
                 At Mewar Organics, we are proud to introduce Terrariums and Paludariums, an exclusive offering redefining how we interact
@@ -786,16 +793,16 @@ const bottomTopVariants1 = {
           <motion.div className="w-full lg:w-1/2" variants={rightSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
             <div className="grid grid-rows-3 grid-cols-2 gap-2">
                 <div className="row-span-2 overflow-hidden">
-                    <img src={image_30} alt='image_30' className="h-[300px] lg:h-[400px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                    <img src={image_30} alt='image_30' loading="lazy" className="h-[300px] lg:h-[400px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                 </div>
                 <div className="row-start-1 col-start-2 row-span-1 overflow-hidden">
-                    <img src={image_31} alt='image_31' className="h-[146px] lg:h-[196px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                    <img src={image_31} alt='image_31' loading="lazy" className="h-[146px] lg:h-[196px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                 </div>
                 <div className="row-span-1 overflow-hidden">
-                    <img src={image_32} alt='image_32' className="h-[146px] lg:h-[196px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                    <img src={image_32} alt='image_32' loading="lazy" className="h-[146px] lg:h-[196px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                 </div>
                 <div className="row-start-2 col-start-2 row-span-2 overflow-hidden">
-                    <img src={image_33} alt='image_33' className="h-[300px] lg:h-[400px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                    <img src={image_33} alt='image_33' loading="lazy" className="h-[300px] lg:h-[400px] w-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                 </div>
             </div>  
           </motion.div>
@@ -804,7 +811,7 @@ const bottomTopVariants1 = {
         {/* 15th Section */}
         <div className="px-4 md:px-8 lg:px-12 xl:px-20 flex flex-col lg:flex-row items-center gap-5 md:gap-10 w-full">
           {/* 15-1 */}
-          <img src={image_34} alt='image_34' className="w-full lg:w-1/2 h-[400px] lg:h-auto"/>
+          <img src={image_34} alt='image_34' loading="lazy" className="w-full lg:w-1/2 h-[400px] lg:h-auto"/>
           {/* 15-2 */}
           <div className="w-full lg:w-1/2">
             <h1 className="text-2xl text-[#55833D] font-medium font-[Roboto] mb-1 md:mb-[10px]">FREE ESTIMATION</h1>

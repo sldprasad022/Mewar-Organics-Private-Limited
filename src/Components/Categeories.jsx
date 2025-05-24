@@ -280,16 +280,16 @@ const Categeories = () => {
           <div className="w-full lg:w-1/2">
             <div className="grid  lg:grid-rows-3 grid-cols-2 gap-2">
               <div className="row-span-1 row-span-2">
-                <img src={image_59} alt="image_59" className="md:h-[300px] lg:h-[370px] w-full"/>
+                <img src={image_59} alt="image_59" loading="lazy" className="md:h-[300px] lg:h-[370px] w-full"/>
               </div>   
               <div className="row-start-1 col-start-2">
-                <img src={image_60} alt="" className="md:h-[200px] lg:h-[181px] w-full" />
+                <img src={image_60} alt="image" loading="lazy" className="md:h-[200px] lg:h-[181px] w-full" />
               </div>
               <div className="row-span-1">
-                <img src={image_61} alt="" className="md:h-[200px] lg:h-[181px] w-full" />
+                <img src={image_61} alt="image" loading="lazy" className="md:h-[200px] lg:h-[181px] w-full" />
               </div>
               <div className="row-span-2 col-start-2 row-start-2">
-                <img src={image_62} alt="" className="md:h-[300px] lg:h-[370px] w-full" />
+                <img src={image_62} alt="image" loading="lazy" className="md:h-[300px] lg:h-[370px] w-full" />
               </div>
             </div>
           </div>
@@ -302,16 +302,16 @@ const Categeories = () => {
         <div className="w-full lg:w-1/2 ">
           <div className="grid  grid-rows-3 grid-cols-2 gap-2">
             <div className="row-span-2">
-              <img src={image_63} alt="image_63" className="h-[200px] md:h-[300px] lg:h-[416px]  xl:h-[406px] w-full" />
+              <img src={image_63} alt="image_63" loading="lazy" className="h-[200px] md:h-[300px] lg:h-[416px]  xl:h-[406px] w-full" />
             </div>
             <div className="row-start-1 col-start-2">
-              <img src={image_64} alt="image_64" className="h-[96px] md:h-[146px] lg:h-[204px] xl:h-[198px] w-full" />
+              <img src={image_64} alt="image_64" loading="lazy" className="h-[96px] md:h-[146px] lg:h-[204px] xl:h-[198px] w-full" />
             </div>
             <div className="row-span-1">
-              <img src={image_65} alt="image_65" className="h-[96px] md:h-[146px] lg:h-[204px] xl:h-[198px] w-full" />
+              <img src={image_65} alt="image_65" loading="lazy" className="h-[96px] md:h-[146px] lg:h-[204px] xl:h-[198px] w-full" />
             </div>
             <div className="row-start-2 col-start-2 row-span-2">
-              <img src={image_66} alt="image_66" className="h-[200px] md:h-[300px] lg:h-[416px] xl:h-[406px] w-full" />
+              <img src={image_66} alt="image_66" loading="lazy" className="h-[200px] md:h-[300px] lg:h-[416px] xl:h-[406px] w-full" />
             </div>
           </div>
         </div>
@@ -451,16 +451,16 @@ const Categeories = () => {
           <motion.div className="w-full lg:w-1/2" variants={rightSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
               <div className="grid grid-rows-3 grid-cols-2 gap-2">
                   <div className="row-span-2">
-                    <img src={image_67} alt='image_67' className="h-[264px] md:h-[300px] lg:h-[442px] xl:h-[414px] w-full"/>
+                    <img src={image_67} alt='image_67' loading="lazy" className="h-[264px] md:h-[300px] lg:h-[442px] xl:h-[414px] w-full"/>
                   </div>
                   <div className="row-start-1 col-start-2">
-                    <img src={image_68} alt='image_68' className="h-[128px] md:h-[146px] lg:h-[216px] xl:h-[203px] w-full"/>
+                    <img src={image_68} alt='image_68' loading="lazy" className="h-[128px] md:h-[146px] lg:h-[216px] xl:h-[203px] w-full"/>
                   </div>
                   <div className="row-span-1">
-                    <img src={image_69} alt='image_69' className="h-[128px] md:h-[146px] lg:h-[216px] xl:h-[203px] w-full"/>
+                    <img src={image_69} alt='image_69' loading="lazy" className="h-[128px] md:h-[146px] lg:h-[216px] xl:h-[203px] w-full"/>
                   </div>
                   <div className="row-start-2 col-start-2 row-span-2">
-                    <img src={image_70} alt='' className="h-[264px] md:h-[300px] lg:h-[442px] xl:h-[414px] w-full"/>
+                    <img src={image_70} alt='image' loading="lazy" className="h-[264px] md:h-[300px] lg:h-[442px] xl:h-[414px] w-full"/>
                   </div>
               </div>
           </motion.div>
@@ -474,16 +474,16 @@ const Categeories = () => {
           <div className="w-full lg:w-1/2">
               <div className="grid grid-rows-3 grid-cols-2 gap-2">
                   <div className="row-span-2">
-                      <img src={image_71} alt='image_71' className="h-[264px] md:h-[400px] lg:h-[492px]  xl:h-[480px] w-full"/>
+                      <img src={image_71} alt='image_71' loading="lazy" className="h-[264px] md:h-[400px] lg:h-[492px]  xl:h-[480px] w-full"/>
                   </div>
                    <div className="row-start-1 col-start-2">
-                      <img src={image_72} alt='image_72' className="h-[128px] md:h-[196px] lg:h-[242px] xl:h-[234px] w-full"/>
+                      <img src={image_72} alt='image_72' loading="lazy" className="h-[128px] md:h-[196px] lg:h-[242px] xl:h-[234px] w-full"/>
                   </div>
                   <div className="row-span-1">
-                      <img src={image_73} alt='image_73' className="h-[128px] md:h-[196px] lg:h-[242px] xl:h-[234px] w-full"/>
+                      <img src={image_73} alt='image_73' loading="lazy" className="h-[128px] md:h-[196px] lg:h-[242px] xl:h-[234px] w-full"/>
                   </div>
                   <div className="row-span-2 row-start-2 col-start-2">
-                      <img src={image_74} alt='image_74' className="h-[264px] md:h-[400px] lg:h-[492px] xl:h-[480px] w-full"/>
+                      <img src={image_74} alt='image_74' loading="lazy" className="h-[264px] md:h-[400px] lg:h-[492px] xl:h-[480px] w-full"/>
                   </div>
               </div>
           </div>
@@ -528,7 +528,7 @@ const Categeories = () => {
               {
                 flowerPlantsDataList.map((eachObject,index)=>(
                   <div key={index} className="flex flex-col  text-center p-4  shadow-lg rounded-2xl">
-                        <img src={eachObject.imageUrl} alt='image' className=""/>
+                        <img src={eachObject.imageUrl} alt='image' loading="lazy" className=""/>
                         {/* <h1 className="my-4 text-lg font-medium font-[Roboto]">{eachObject.title}</h1> */}
                         <h1 className=" my-2 md:my-3 xl:my-4  md:text-base xl:text-lg font-semibold font-[Roboto]">
                             {eachObject.title.split('(')[0]}
@@ -558,15 +558,15 @@ const Categeories = () => {
       <div className="px-4 md:px-8 lg:px-12 xl:px-20  flex flex-col lg:flex-row gap-6 md:gap-12 w-full">
         {/* 1st */}
         <div className="w-full lg:w-1/2 grid grid-cols-3 gap-5 md:gap-5">
-            <img src={image_75} alt='image_75' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
-            <img src={image_76} alt='image_76' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
-            <img src={image_77} alt='image_77' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
-            <img src={image_78} alt='image_78' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
-            <img src={image_79} alt='image_79' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
-            <img src={image_80} alt='image_80' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
-            <img src={image_81} alt='image_81' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
-            <img src={image_82} alt='image_82' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
-            <img src={image_83} alt='image_83' className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_75} alt='image_75'  loading="lazy"  className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_76} alt='image_76'  loading="lazy"  className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_77} alt='image_77'  loading="lazy"  className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_78} alt='image_78'  loading="lazy"  className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_79} alt='image_79'  loading="lazy"  className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_80} alt='image_80'  loading="lazy"  className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_81} alt='image_81'  loading="lazy"  className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_82} alt='image_82'  loading="lazy"  className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
+            <img src={image_83} alt='image_83'  loading="lazy"  className="h-[110px] md:h-[200px] lg:h-[242px] w-[110px] md:w-[266px]"/>
         </div>
         {/* 2nd */}
         <div className="flex flex-col w-full lg:w-1/2">

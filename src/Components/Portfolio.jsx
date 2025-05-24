@@ -97,7 +97,7 @@ const Portfolio = () => {
           private-label customization. Partner with us for purity,
           sustainability and innovation.
         </motion.h1>
-        <motion.img src={image_54} alt="image_54" className="h-[200px] md:h-auto my-3 md:my-5" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"} />
+        <motion.img src={image_54} alt="image_54" loading="lazy" className="h-[200px] md:h-auto my-3 md:my-5" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"} />
         <motion.p className="text-sm md:text-lg lg:text-xl font-[Roboto] text-[#212529]" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"}>
           At Mewar Organics, we believe in transforming spaces into thriving
           green ecosystems that support both nature and human well-being. Our
@@ -128,6 +128,7 @@ const Portfolio = () => {
               <img
                 src={image_55}
                 alt="image_55"
+                loading="lazy"
                 className="md:h-[300px] lg:h-auto w-full  rounded-lg object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
               />
             </div>
@@ -157,6 +158,7 @@ const Portfolio = () => {
               <img
                 src={image_56}
                 alt="image_56"
+                loading="lazy"
                 className="md:h-[300px] lg:h-auto w-full  rounded-lg object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
               />
             </div>
@@ -186,6 +188,7 @@ const Portfolio = () => {
               <img
                 src={image_57}
                 alt="image_57"
+                loading="lazy"
                 className="md:h-[300px] lg:h-auto w-full  rounded-lg object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
               />
             </div>

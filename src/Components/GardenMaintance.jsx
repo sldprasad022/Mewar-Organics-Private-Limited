@@ -352,7 +352,7 @@ const GardenMaintance = () => {
                             <path d="M37.8815 35.512L30.5298 33.0003L27.9998 40.3337L22.3532 29.3337L16.9998 40.3337L14.4698 33.0003L7.11816 35.512L12.4715 24.512C10.7115 22.312 9.6665 19.5253 9.6665 16.5003C9.6665 13.0967 11.0186 9.8325 13.4253 7.42579C15.832 5.01907 19.0962 3.66699 22.4998 3.66699C25.9034 3.66699 29.1677 5.01907 31.5744 7.42579C33.9811 9.8325 35.3332 13.0967 35.3332 16.5003C35.3332 19.5253 34.2882 22.312 32.5282 24.512L37.8815 35.512ZM13.3332 16.5003L18.2648 18.957L17.9165 24.457L22.4998 21.4137L27.0832 24.4387L26.7715 18.957L31.6665 16.5003L26.7532 14.0253L27.0832 8.56199L22.4998 11.5687L17.9165 8.52533L18.2282 14.0437L13.3332 16.5003Z" fill="#55833D"/>
                         </svg>
                         <div className='flex flex-col gap-4 md:gap-5'>
-                            <h1 className='text-2xl md:text-base lg:text-xl xl:text-2xl text-[#000] font-[Roboto] font-medium'>Why It soft?</h1>
+                            <h1 className='text-2xl md:text-lg lg:text-xl xl:text-2xl text-[#000] font-[Roboto] font-medium'>Why It soft?</h1>
                             <h1 className='text-base md:text-sm  lg:text-lg xl:text-xl text-[#000] font-[Roboto]'>We're making room for self care today with plan.</h1>
                         </div>
                     </div>
@@ -362,7 +362,7 @@ const GardenMaintance = () => {
                             <path d="M4.40039 14.2002H11.7598V27.8428H27.5996V30.7998C27.5996 32.6675 26.0678 34.2001 24.2002 34.2002H12.7861L12.4932 34.4932L7.59961 39.3857V34.2002H4.40039C2.53268 34.2002 1 32.6675 1 30.7998V17.6006C1 15.7329 2.53268 14.2002 4.40039 14.2002ZM19.7998 3.2002H39.5996C41.4673 3.2002 43 4.73287 43 6.60059V19.7998C43 21.6694 41.4676 23.2002 39.5996 23.2002H36.4004V28.3857L31.5068 23.4932L31.2139 23.2002H16.4004V6.60059C16.4004 4.73294 17.9322 3.2003 19.7998 3.2002Z" stroke="#55833D" strokeWidth="2"/>
                         </svg>
                         <div className='flex flex-col gap-4 md:gap-5'>
-                            <h1 className='text-2xl md:text-base lg:text-xl xl:text-2xl text-[#000] font-[Roboto] font-medium'>Unlimited support</h1>
+                            <h1 className='text-2xl md:text-lg lg:text-xl xl:text-2xl text-[#000] font-[Roboto] font-medium'>Unlimited support</h1>
                             <h1 className='text-base md:text-sm lg:text-lg xl:text-xl text-[#000] font-[Roboto]'>New range coming in on a weekly basis veg section.</h1>
                         </div>
                     </div>
@@ -370,7 +370,7 @@ const GardenMaintance = () => {
             
                 {/* 3rd */}
                 <div className='flex flex-col md:flex-row gap-3 md:gap-5 lg:gap-[20px] xl:gap-[40px] md:w-full lg:w-[95%] xl:w-full'>
-                    <img src={image_100} alt='image_100' className='md:w-1/2 lg:w-[220px] xl:w-[438px] h-[250px]'/>
+                    <img src={image_100} alt='image_100' loading="lazy" className='md:w-1/2 lg:w-[220px] xl:w-[438px] h-[250px]'/>
                     <div className='flex flex-col gap-3 md:gap-5'>
                         <h1 className='text-2xl md:text-xl md:text-2xl text-[#000] font-[Roboto] font-medium'>We serve the best work</h1>
                         <p className='text-sm md:text-lg lg:text-xl text-[#000] font-[Roboto]'>
@@ -463,7 +463,7 @@ const GardenMaintance = () => {
                     <p className='mb-4 md:mb-8 lg:mb-[78px] text-sm md:text-lg lg:text-xl font-[Roboto]'>Welcome to Garda. For 25 years, we have brought our signature design aesthetic to public and private gardens through out New York City. 
                         Our goal is to increase the natural beauty of every landscape.
                     </p>
-                    <button className='px-8 md:px-8 py-3 md:py-3 lg:py-4 border lg:border-solid lg:border-4 lg:border-b-8 bg-[#55833D] lg:border-[#55833D] rounded-[8px] lg:rounded-[100px] text-[#FFF] lg:text-[#212529] font-[Roboto] font-semibold lg:text-lg' onClick={handleClick}>
+                    <button className='px-8 md:px-8 py-3 md:py-3 lg:py-4 border lg:border-solid lg:border-4 lg:border-b-8 bg-[#55833D] lg:border-[#55833D] rounded-[8px] lg:rounded-[100px] text-[#FFF] lg:text-[#FFF] font-[Roboto] font-semibold lg:text-lg' onClick={handleClick}>
                         Contact Us
                     </button>       
                 </div>
@@ -493,7 +493,7 @@ const GardenMaintance = () => {
             </div>
             {/* 3rd Section - Full width below on all screens */}
             <div className='w-full order-3'>
-                <img src={image_101} alt='image_101' className='w-full h-[340px] md:h-[600px] lg:h-[500px] xl:h-[550px]  object-cover object-center'/>
+                <img src={image_101} alt='image_101' loading="lazy" className='w-full h-[340px] md:h-[600px] lg:h-[500px] xl:h-[550px]  object-cover object-center'/>
             </div>
         </div>
 

@@ -88,7 +88,7 @@ const About = () => {
       {/*  */}
       <div className='px-4 md:px-8 lg:px-12 xl:px-20'>
         <h1 className='text-center text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 md:mb-8'>Our Story</h1>
-        <motion.img src={image_36} alt='image_36' className='h-[200px] md:h-auto bg-cover bg-center' variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}/>
+        <motion.img src={image_36} alt='image_36' loading="lazy" className='h-[200px] md:h-auto bg-cover bg-center' variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}/>
       </div>
 
 
@@ -114,19 +114,19 @@ const About = () => {
         <div className='grid md:grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-4 xl:gap-10'>
             {/*  */}
             <div className='p-4 md:p-5 lg:p-4 xl:p-8 shadow-xl'>
-                <img src={image_37} alt='image_37' className='w-full md:h-[348px] lg:h-[250px] xl:h-auto'/>
+                <img src={image_37} alt='image_37' loading="lazy" className='w-full md:h-[348px] lg:h-[250px] xl:h-auto'/>
                 <h1 className='text-xl md:text-2xl lg:text-xl xl:text-2xl font-playfair font-semibold my-3 md:my-5 text-center'>Greener Tomorrow</h1>
                 <p className='text-base md:text-lg  xl:text-xl font-[Roboto] text-center'>To create a healthier planet by promoting biodiversity, conserving native species, and developing sustainable green spaces that restore ecological balance.</p>
             </div>
             {/*  */}
             <div className='p-4 md:p-5 lg:p-4 xl:p-8 shadow-xl'>
-               <img src={image_38} alt='image_38' className='w-full md:h-[348px] lg:h-[250px] xl:h-auto'/>
+               <img src={image_38} alt='image_38' loading="lazy" className='w-full md:h-[348px] lg:h-[250px] xl:h-auto'/>
                <h1 className='text-xl md:text-2xl lg:text-xl xl:text-2xl  font-playfair font-semibold my-3 md:my-5 text-center'>Empowering Communities</h1>
                <p className='md:text-lg  xl:text-xl font-[Roboto] text-center'>To inspire individuals, families, and businesses to reconnect with nature through personalized gardens,educational initiatives, and eco-friendly projects that contribute to a sustainable lifestyle.</p>
             </div>
             {/*  */}
             <div className='p-4 md:p-5 lg:p-4 xl:p-8 shadow-xl'>
-              <img src={image_39} alt='image_39' className='w-full md:h-[348px] lg:h-[250px] xl:h-auto'/>
+              <img src={image_39} alt='image_39' loading="lazy" className='w-full md:h-[348px] lg:h-[250px] xl:h-auto'/>
                 <h1 className='text-xl md:text-2xl lg:text-xl xl:text-2xl  font-playfair font-semibold my-3 md:my-5 text-center'>Cultural Preservation</h1>
                 <p className='md:text-lg  xl:text-xl font-[Roboto] text-center'>To blend ancient wisdom with modern landscaping practices by promoting culturally significant plants and creating themed vatikas that honor India’s rich botanicalheritage.</p>
             </div>
@@ -141,7 +141,7 @@ const About = () => {
                 {/*  */}
                   <div className="shadow-lg p-5 md:p-6 lg:p-5 xl:py-8 xl:px-7 rounded-lg" >
                       <div className="overflow-hidden mb-3 md:mb-7">
-                          <img src={image_24} alt='image_24' className="md:h-auto lg:h-[220px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                          <img src={image_24} alt='image_24' loading="lazy" className="md:h-auto lg:h-[220px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                       </div>
                       <h1 className="text-center  font-bold md:text-xl lg:text-lg xl:text-xl mb-1 md:mb-2 font-[Roboto] ">Native Plant Advocacy</h1>
                       <h1 className="text-center  text-base lg:text-sm font-[Roboto]">Focus on local and sustainable plant species.</h1>
@@ -149,7 +149,7 @@ const About = () => {
                   {/*  */}
                   <div className="shadow-lg p-5 md:p-6 lg:p-5 xl:py-8 xl:px-7 rounded-lg">
                     <div className="overflow-hidden mb-3 md:mb-7">
-                      <img src={image_25} alt='image_25' className="md:h-auto lg:h-[220px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/> 
+                      <img src={image_25} alt='image_25' loading="lazy" className="md:h-auto lg:h-[220px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/> 
                     </div>
                       <h1 className="text-center  font-bold md:text-xl lg:text-lg xl:text-xl mb-1 md:mb-2 font-[Roboto]">Innovative Solutions</h1>
                       <h1 className="text-center  text-base lg:text-sm font-[Roboto]">Customized gardens / Vatikas for every need.</h1>
@@ -157,7 +157,7 @@ const About = () => {
                   {/*  */}
                   <div className="shadow-lg p-5 md:p-6 lg:p-5 xl:py-8 xl:px-7 rounded-lg">
                       <div className="overflow-hidden mb-3 md:mb-7">
-                        <img src={image_26} alt='image_26' className="md:h-auto lg:h-[220px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                        <img src={image_26} alt='image_26' loading="lazy" className="md:h-auto lg:h-[220px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                       </div>
                       <h1 className="text-center  font-bold md:text-xl lg:text-lg xl:text-xl mb-1 md:mb-2 font-[Roboto]">Expertise in Landscaping</h1>
                       <h1 className="text-center  text-base lg:text-sm font-[Roboto]">Skilled professionals to guide every project.</h1>
@@ -165,7 +165,7 @@ const About = () => {
                   {/*  */}
                   <div className="shadow-lg p-5 md:p-6 lg:p-5 xl:py-8 xl:px-7 rounded-lg">
                     <div className="overflow-hidden mb-3 md:mb-7">
-                      <img src={image_27} alt='image_27' className="md:h-auto lg:h-[220px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
+                      <img src={image_27} alt='image_27' loading="lazy" className="md:h-auto lg:h-[220px] xl:h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"/>
                     </div>
                       <h1 className="text-center  font-bold md:text-xl lg:text-lg xl:text-xl mb-1 md:mb-2 font-[Roboto]">Environmentally Conscious</h1>
                       <h1 className="text-center  text-base lg:text-sm font-[Roboto]">Practices that prioritize soil health and water conservation.</h1>
