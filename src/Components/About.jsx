@@ -71,13 +71,13 @@ const About = () => {
                         </clipPath>
                       </defs>
                   </svg>
-                  <h1 className='text-[#FFF] text-xl md:text-2xl font-semibold font-[Roboto]' to='/aboutus'>About</h1>
+                  <h1 className='text-[#FFF] text-xl md:text-2xl font-semibold font-[Roboto]'>About</h1>
               </div>
           </section>
 
 
-        <div className='absolute bottom-[0px] '>
-            <img src={GRASS} alt='' className=''/>
+        <div className='absolute bottom-[0px] w-full'>
+            <img src={GRASS} alt='GRASS' className='w-full'/>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ const About = () => {
       {/*  */}
       <div className='px-4 md:px-8 lg:px-12 xl:px-20'>
         <h1 className='text-center text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 md:mb-8'>Our Story</h1>
-        <motion.img src={image_36} alt='image_36' loading="lazy" className='h-[200px] md:h-auto bg-cover bg-center' variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}/>
+        <motion.img src={image_36} alt='image_36' loading="lazy" className='bg-cover bg-center' variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}/>
       </div>
 
 

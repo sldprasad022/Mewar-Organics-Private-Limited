@@ -77,8 +77,8 @@ const Portfolio = () => {
           </div>
         </section>
         {/*  */}
-        <div className="absolute bottom-[0px]">
-          <img src={GRASS} alt="GRASS" className="" />
+        <div className="absolute bottom-[0px] w-full">
+          <img src={GRASS} alt="GRASS" className="w-full" />
         </div>
       </div>
 
@@ -97,7 +97,7 @@ const Portfolio = () => {
           private-label customization. Partner with us for purity,
           sustainability and innovation.
         </motion.h1>
-        <motion.img src={image_54} alt="image_54" loading="lazy" className="h-[200px] md:h-auto my-3 md:my-5" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"} />
+        <motion.img src={image_54} alt="image_54" loading="lazy" className=" my-3 md:my-5" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"} />
         <motion.p className="text-sm md:text-lg lg:text-xl font-[Roboto] text-[#212529]" variants={bottomTopVariants1} initial="hidden" animate={animated ? "visible" : "hidden"}>
           At Mewar Organics, we believe in transforming spaces into thriving
           green ecosystems that support both nature and human well-being. Our
@@ -105,7 +105,7 @@ const Portfolio = () => {
           organic practices, and designs that blend beauty with environmental
           purpose. Whether working on small urban gardens or expansive forest
           projects, our approach ensures longterm ecological balance and
-          aesthetic charm. <br/>Our work goes beyond just planting; we create
+          aesthetic charm. <br/>Our work goes beyond just planting.We create
           purposeful landscapes that inspire, educate, and heal. Each project is
           carefully tailored to its location, climate, and cultural importance,
           ensuring that every green space serves a unique function—whether for
@@ -176,7 +176,7 @@ const Portfolio = () => {
               requiring minimal maintenance.
             </p>
             <div className="text-center mt-auto">
-              <Link className="px-4 md:px-8 py-2 md:py-3 bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2">
+              <Link className="px-4 md:px-8 py-2 md:py-3 bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2" to='/portfolio/miyawaki'>
                 View Project
               </Link>
             </div>
@@ -200,13 +200,13 @@ const Portfolio = () => {
             </h1>
             <p className="text-sm md:text-base font-[Roboto] text-center mb-4">
               A culturally significant gardenfeaturing the five sacred trees
-              fromancient mythology – Peepal, Banyan,Amla, Ashoka, and
+              from ancient mythology – Peepal, Banyan,Amla, Ashoka, and
               Belpatra.Designed for spiritual reflection and heritage
               preservation, this space combines nature with mythology,offering a
               serene atmosphere for meditation and cultural story telling.
             </p>
             <div className="text-center mt-auto">
-              <Link className="px-4 md:px-8 py-2 md:py-3 bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2">
+              <Link className="px-4 md:px-8 py-2 md:py-3 bg-[#55833D] rounded-lg text-[#fff] hover:text-[#55833D] hover:bg-white hover:border hover:border-[#55833D] hover:border-2" to='/portfolio/miyawaki'>
                 View Project
               </Link>
             </div>

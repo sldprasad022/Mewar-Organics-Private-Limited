@@ -87,8 +87,6 @@ const handleChange = (e) => {
     }));
   };
 
-  
-
 
   const handleSubmit =(e)=>{
     e.preventDefault();
@@ -154,6 +152,10 @@ const handleClick = ()=>{
     navigateTo('/contact')
   }
 
+  const handlemiyawaki = ()=>{
+    navigateTo('/portfolio/miyawaki')
+  }
+
 
 
 
@@ -190,32 +192,10 @@ const handleClick = ()=>{
     }
   ]
 
-
-  const scrollRef = useRef(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
-
-
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-    setStartX(e.pageX - scrollRef.current.offsetLeft);
-    setScrollLeft(scrollRef.current.scrollLeft);
-  };
-
-  const handleMouseLeave = () => setIsDragging(false);
-  const handleMouseUp = () => setIsDragging(false);
-
-  const handleMouseMove = (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 1.5; // scroll speed
-    scrollRef.current.scrollLeft = scrollLeft - walk;
-  };
-
   //----------------------- Scrollbar  Code------------------------------------------------
 
+
+  
   //--------------------------Animation--------------------------------------------------------------
 
   const [animated, setAnimated] = useState(false);
@@ -284,7 +264,7 @@ const bottomTopVariants1 = {
                   <p className="text-[#30341b] md:text-lg lg:text-xl xl:text-[24px] text-center font-semibold mx-auto w-full max-w-[30%] md:max-w-[40%] lg:max-w-[70%] font-[Roboto]">Experience the power of organic wellness with Mewar Organics</p>
               </motion.div>
 
-               <div className='pl-28 md:pl-44 lg:pl-60 xl:pl-80 pt-6 lg:pt-8'>
+               <div className='pl-28 md:pl-44 lg:pl-60 xl:pl-[310px] pt-6 lg:pt-8'>
                   <motion.button className='flex gap-2 items-center p-2 md:p-3 lg:p-4 xl:p-5 rounded-xl text-lg md:text-xl bg-[#55833D] text-white flex itmes-center' variants={bottomVariants} initial="hidden" animate={animated ? "visible" : "hidden"} onClick={handleContact}>
                   Contact Us
                   <svg
@@ -393,7 +373,7 @@ const bottomTopVariants1 = {
       <div className='px-4 md:px-8 lg:px-12 xl:px-20'>
         <h1 className='text-center lg:text-xl xl:text-[28px] font-[Roboto] text-[#55833D] font-semibold'>Services</h1>
         <h1 className='text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-playfair  font-semibold mb-3 md:mb-4 lg:mb-8'>Our Awesome Services</h1>
-          <ScrollContainer className="flex gap-4 md:gap-3 lg:gap-6 overflow-x-hidden cursor-grab active:cursor-grabbing" vertical={false} hideScrollbars={true}>
+          <ScrollContainer className="flex gap-4 md:gap-3 lg:gap-6 overflow-x-hidden cursor-grab active:cursor-grabbing" vertical={true} hideScrollbars={true}>
             {dataList.map((eachObject, index) => (
               <div key={index} className="p-5 bg-[#FFF] rounded-xl shadow-2xl flex-shrink-0 flex flex-col gap-4 items-center justify-center w-[180px] md:w-[250px] h-[120px] md:h-[150px] hover:border hover:border-b-[#55833D] hover:border-solid hover:border-b-8" onClick={handleClick}>
                 <img src={eachObject.image} alt="icon" className="w-9 md:w-12 h-9 md:h-12 mb-1 md:mb-2" />
@@ -508,7 +488,7 @@ const bottomTopVariants1 = {
         </div>
         {/*  */}
         <motion.div className='flex justify-center md:justify-end' variants={rightSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
-          <button className="text-base  md:text-lg px-5 lg:px-8 py-2 lg:py-3 rounded-3xl border border-2 border-[#55833D] border-solid hover:bg-[#55833D] hover:text-white transition-all duration-300">
+          <button className="text-base  md:text-lg px-5 lg:px-8 py-2 lg:py-3 rounded-3xl border border-2 border-[#55833D] border-solid hover:bg-[#55833D] hover:text-white transition-all duration-300" onClick={handlemiyawaki}>
               Explore More
           </button>
         </motion.div>
@@ -623,7 +603,7 @@ const bottomTopVariants1 = {
             <div className="absolute bottom-[0px] left-0 w-full transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out bg-black bg-opacity-60 text-white p-4">
               <div className='flex flex-col justify-center items-center p-0 xl:p-2.5 gap-1 lg:gap-2 xl:gap-5'>
                 <h1 className='md:text-sm lg:text-lg xl:text-xl xl:font-bold font-playfair'>Landscape Design Basics</h1>
-                <p className='font-[Roboto] text-xs lg:text-sm xl:text-base'>Learn the fundamental principles of landscape design, from plant selection to layout planning, to create beautiful and sustainable outdoor spaces</p>
+                <p className='font-[Roboto] text-xs lg:text-sm xl:text-base'>Learn the fundamental principles of landscape design, from plant selection to layout planning, to create beautiful and sustainable outdoor spaces.</p>
               </div>
             </div>
          </div>
@@ -662,7 +642,7 @@ const bottomTopVariants1 = {
             <div className="absolute bottom-[0px] left-0 w-full transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out bg-black bg-opacity-60 text-white p-4">
              <div className='flex flex-col justify-center items-center p-0 xl:p-2.5 gap-1 lg:gap-2 xl:gap-5'>
                 <h1 className='md:text-sm lg:text-lg xl:text-xl xl:font-bold font-playfair'>Watering Techniques and Conservation</h1>
-                <p className='font-[Roboto] text-xs lg:text-sm xl:text-base'>Optimize plant health with effective watering methods while conserving water through smart irrigation and sustainable practices</p>
+                <p className='font-[Roboto] text-xs lg:text-sm xl:text-base'>Optimize plant health with effective watering methods while conserving water through smart irrigation and sustainable practices.</p>
               </div>
             </div>
          </div>
@@ -776,16 +756,16 @@ const bottomTopVariants1 = {
           {/* 14-1 */}
                <motion.div className="flex flex-col w-full lg:w-1/2" variants={leftSideVariants} initial="hidden" animate={animated ? "visible" : "hidden"}>
                   <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-playfair font-semibold mb-2 md:mb-5 lg:mb-12">Why Choose Terrariums <br/> & Paludariums ?</h1>
-                  <p className="md:text-lg lg:text-xl font-[Roboto] mb-2 md:mb-4 lg:mb-7">
+                  <p className="text-sm md:text-lg lg:text-xl font-[Roboto] mb-2 md:mb-4 lg:mb-7">
                       • Perfect for homes, offices, and luxury interiors.<br/>
                       • Require low maintenance while offering high visual appeal.<br/>
                       • Act as natural air purifiers and conversation starters.
                   </p>
-                  <p className="mb-2 md:mb-4 lg:mb-8 font-[Roboto] md:text-lg lg:text-xl">
+                  <p className="mb-2 md:mb-4 lg:mb-8 font-[Roboto] text-sm md:text-lg lg:text-xl">
                     Pioneering Elegance in Green Design With Mewar Organics, you get handcrafted, bespoke terrariums and paludariums tailored to your style. This grand
                     innovation positions us at the forefront of modern landscaping and eco-friendly interiors, offering unmatched beauty and functionality.
                   </p>
-                  <p className="md:text-lg lg:text-xl font-[Roboto]">
+                  <p className="text-sm md:text-lg lg:text-xl font-[Roboto]">
                     This revolutionary concept is your gateway to sophisticated, nature-inspired living. Let us bring this rare luxury into your spaces.
                   </p>
               </motion.div>
@@ -873,8 +853,7 @@ const bottomTopVariants1 = {
         </div>
         
 
-
-
+                
     </div>
   )
 }

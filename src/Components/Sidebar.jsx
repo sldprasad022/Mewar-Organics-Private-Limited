@@ -2,6 +2,7 @@ import React from 'react'
 import image_89 from "../assets/image_89.png";
 import image_90 from "../assets/image_90.png";
 import { Link } from 'react-router-dom';
+import mewarlogo1 from '../assets/mewarlogo1.png'
 
 
 const Sidebar = ({setSidebarOpen}) => {
@@ -15,7 +16,8 @@ const Sidebar = ({setSidebarOpen}) => {
         </button>
         {/*  */}
        <div className='flex flex-col  hidden lg:block'>
-            <img src={image_89} alt='image_89' loading="lazy" className='w-[160px] h-[60px] mb-10'/>
+            {/* <img src={image_89} alt='image_89' loading="lazy" className='w-[160px] h-[60px] mb-10'/> */}
+            <img src={mewarlogo1} alt='image_89' loading="lazy" className='w-[160px] h-[60px] mb-10'/>
             <p className='text-[#000] text-lg font-semibold font-playfair '>
                 We take pride in customizing our services to meet the needs and budgets of each individual customer.
             </p>
@@ -66,7 +68,8 @@ const Sidebar = ({setSidebarOpen}) => {
 
             {/* Tab Screen */}
             <div className='flex block lg:hidden '>
-                <img src={image_89} alt='image_89' loading="lazy" className='w-[160px] h-[50px] md:h-[60px]'/>
+                {/* <img src={image_89} alt='image_89' loading="lazy" className='w-[160px] h-[50px] md:h-[60px]'/> */}
+                <img src={mewarlogo1} alt='mewarlogo1' loading="lazy" className='w-[160px] h-[50px] md:h-[60px]'/>
                 {/*  */}
                 <button className='flex lg:hidden' onClick={()=>setSidebarOpen(false)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 54 54" fill="none">
@@ -77,22 +80,22 @@ const Sidebar = ({setSidebarOpen}) => {
 
 
             <div className='mt-2 md:mt-10 flex flex-col w-full gap-5   block lg:hidden'>
-                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2' to='/'>
+                <Link className='px-5 py-2.5 border border-lime-400 border-b-2' to='/'>
                     <h1 className='font-medium' >Home</h1>
                 </Link>
-                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 ' to='/aboutus'>
+                <Link className='px-5 py-2.5 border border-lime-400  border-b-2 ' to='/aboutus'>
                     <h1 className='font-medium' >About</h1>
                 </Link>
-                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 ' to='/services'>
+                <Link className='px-5 py-2.5 border border-lime-400  border-b-2 ' to='/services'>
                     <h1 className='font-medium' >Services</h1>
                 </Link>
-                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 ' to='/portfolio'>
+                <Link className='px-5 py-2.5 border border-lime-400  border-b-2 ' to='/portfolio'>
                     <h1 className='font-medium' >Portfolio</h1>
                 </Link>
-                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 '  to='/categeories'>
+                <Link className='px-5 py-2.5 border border-lime-400  border-b-2 '  to='/categeories'>
                     <h1 className='font-medium'>Categories</h1>
                 </Link>
-                <Link className='px-5 py-2.5 border border-b-[#212529] border-b-2 ' to='/contact'>
+                <Link className='px-5 py-2.5 border border-lime-400  border-b-2 ' to='/contact'>
                     <h1 className='font-medium' >Contact</h1>
                 </Link>
             </div>

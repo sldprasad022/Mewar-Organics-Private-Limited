@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='mt-10 h-[1250px] md:h-[780px] lg:h-[550px] xl:h-[550px] bg-cover bg-center ' style={{backgroundImage : `url(${footer})`}}>
+    <div className='mt-10 h-[1220px] md:h-[780px] lg:h-[550px] xl:h-[550px] bg-cover bg-center ' style={{backgroundImage : `url(${footer})`}}>
         
        <section className='grid grid-cols-1 md:grid-cols-2 p-4 md:py-10 md:px-8 gap-8 md:gap-14  lg:flex  lg:justify-between lg:px-[60px] xl:px-[206px] pt-[40px] font-[Roboto]'>
                 {/* 1st Section */}
@@ -130,6 +130,9 @@ const Footer = () => {
 
         <section className='mt-5 md:mt-5 lg:mt-[70px] font-[Roboto] w-[280px] md:w-auto mx-auto md:mx-0'>
             <h1 className='text-center text-[#fff]'>2025 Mewar Organics Private Limited. All rights reserved</h1>
+        </section>
+        <section className='mt-5 font-[Roboto] bg-lime-800 py-4'>
+            <h1 className='text-center text-[15px] text-[#fff]'>Designed and Maintained by Techpixe</h1>
         </section>
     </div>
   )

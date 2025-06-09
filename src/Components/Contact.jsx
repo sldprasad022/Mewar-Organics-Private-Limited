@@ -94,8 +94,8 @@ const Contact = () => {
               <h1 className='text-[#FFF] text-xl md:text-2xl font-semibold font-[Roboto]'>Contact</h1>
               </div>
           </section>
-        <div className='absolute bottom-[0px]'>
-            <img src={GRASS} alt='GRASS' className=''/>
+        <div className='absolute bottom-[0px] w-full'>
+            <img src={GRASS} alt='GRASS' className='w-full'/>
         </div>
       </div>
 
@@ -240,9 +240,10 @@ const Contact = () => {
 
 
       {/*  */}
+      {/* Note : Go to location -> Click 'Share' Option -> click Embed Map -> select <iframe/>code. */}
       <div className="px-4 md:px-8 lg:px-12 xl:px-20 ">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6257268932795!2d78.42549292516588!3d17.429740183464727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb912a45f15555%3A0xcacf053510a3c142!2sTechpixe%20India!5e0!3m2!1sen!2sin!4v1746431300092!5m2!1sen!2sin"
-          className='w-full h-[240px] md:h-[400px] lg:h-[600px]'>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4491.219737381937!2d74.622967!3d24.88546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDUzJzA3LjciTiA3NMKwMzcnMjIuNyJF!5e1!3m2!1sen!2sin!4v1749113514595!5m2!1sen!2sin" 
+            className='w-full h-[240px] md:h-[400px] lg:h-[600px]'>
         </iframe>
       </div>
 

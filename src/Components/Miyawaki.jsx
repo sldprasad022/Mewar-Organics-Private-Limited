@@ -59,8 +59,8 @@ const Miyawaki = () => {
                 </div>
             </section>
             {/*  */}
-            <div className='absolute bottom-0'>
-                <img src={GRASS} alt='GRASS' className=''/>
+            <div className='absolute bottom-0 w-full'>
+                <img src={GRASS} alt='GRASS' className='w-full'/>
             </div>
         </div>
 

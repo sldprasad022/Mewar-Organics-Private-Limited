@@ -106,8 +106,8 @@ const Services = () => {
                   </div>
           </section>
 
-          <div className='absolute bottom-[0px]'>
-              <img src={GRASS} alt='GRASS' className=''/>
+          <div className='absolute bottom-[0px] w-full'>
+              <img src={GRASS} alt='GRASS' className='w-full'/>
           </div>
 
       </div>
@@ -207,7 +207,7 @@ const Services = () => {
                           • Nakshatra Vatika: Plants based on celestial constellations.<br/>
                           • Rashi Vatika: Zodiac-based plants like Amla, Neem, and Peepal.<br/>
                           • Tirthankar Vatika: Sacred plants from Jain traditions.<br/>
-                          • Panchvati Vatika: Mythological plants like Banyan, Peepal, and Amla And Many More
+                          • Panchvati Vatika: Mythological plants like Banyan, Peepal, and Amla And Many More.
                       </h1>
                   </div>
                   <div className=' absolute bottom-[-14px] left-[150px] md:left-[154px] lg:left-[98px] xl:left-[140px] 2xl:left-1/2 '>
@@ -263,7 +263,7 @@ const Services = () => {
                         • Kitchen Gardens <br/>
                         • Balcony Gardens <br/>
                         • Terrace Gardens <br/>
-                        • Outdoor Landscaping
+                        • Outdoor Landscaping.
                       </h1>
                   </div>
                   <div className=' absolute bottom-[-14px] left-[150px] md:left-[154px] lg:left-[98px] xl:left-[140px] 2xl:left-1/2  '>
@@ -275,9 +275,9 @@ const Services = () => {
                   </div>  
                 </div>
                 {/* -- */}
-                <div className='lg:col-span-3 p-10 xl:p-10 hidden lg:block '>
+                {/* <div className='lg:col-span-3 p-10 xl:p-10 hidden lg:block '>
                   <img src={flowerImage3} alt='flowerImage1' className='h-[400px] w-[200px] xl:w-auto xl:h-[500px] object-revert xl:object-cover object-center  '/>
-                </div>
+                </div> */}
                 {/* -- */}
             </div>
 

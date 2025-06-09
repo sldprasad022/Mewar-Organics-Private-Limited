@@ -44,19 +44,19 @@ const handleContact = ()=>{
               <div className="my-3 md:my-[15px]">
                 <img
                   src={mewarlogo1}
-                  alt="mewarlogo"
+                  alt="mewarlogo1"
                   loading="lazy"
                   className="h-[35px] md:h-[60px] lg:h-[70px] object-cover"
                 />
               </div>
                 {/*  */}
                 <div className="hidden lg:flex items-center gap-5 xl:gap-10 text-[#000] font-medium text-base">
-                  <NavLink to="/" className={({ isActive }) => `pb-2 border-b-2 ${isActive ? 'border-[#55833D]' : 'border-transparent'} text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Home</NavLink>
-                  <NavLink to="/aboutus" className={({ isActive }) =>`pb-2 border-b-2 ${isActive ? 'border-[#55833D]' : 'border-transparent'} text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>About</NavLink>
-                  <NavLink to="/services"  className={({ isActive }) =>`pb-2 border-b-2 ${isActive ? 'border-[#55833D]' : 'border-transparent'} text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Services</NavLink>
-                  <NavLink to="/portfolio"  className={({ isActive }) =>`pb-2 border-b-2 ${isActive ? 'border-[#55833D]' : 'border-transparent'} text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Portfolio</NavLink>
-                  <NavLink to="/categeories"  className={({ isActive }) =>`pb-2 border-b-2 ${isActive ? 'border-[#55833D]' : 'border-transparent'} text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Categories</NavLink>
-                  <NavLink to="/contact"  className={({ isActive }) =>`pb-2 border-b-2 ${isActive ? 'border-[#55833D]' : 'border-transparent'} text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Contact</NavLink>
+                  <NavLink to="/" className={({ isActive }) => ` ${isActive ? 'border-[#55833D]' : 'border-transparent'}  pb-2 border-b-2 text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Home</NavLink>
+                  <NavLink to="/aboutus" className={({ isActive }) =>` ${isActive ? 'border-[#55833D]' : 'border-transparent'}  pb-2 border-b-2 text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>About</NavLink>
+                  <NavLink to="/services"  className={({ isActive }) =>` ${isActive ? 'border-[#55833D]' : 'border-transparent'}  pb-2 border-b-2 text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Services</NavLink>
+                  <NavLink to="/portfolio"  className={({ isActive }) =>` ${isActive ? 'border-[#55833D]' : 'border-transparent'}  pb-2 border-b-2 text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Portfolio</NavLink>
+                  <NavLink to="/categeories"  className={({ isActive }) =>` ${isActive ? 'border-[#55833D]' : 'border-transparent'}  pb-2 border-b-2 text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Categories</NavLink>
+                  <NavLink to="/contact"  className={({ isActive }) =>` ${isActive ? 'border-[#55833D]' : 'border-transparent'}  pb-2 border-b-2 text-[#000] lg:text-base xl:text-xl font-[Roboto] font-medium`}>Contact</NavLink>
                 </div>
                   {/*  */}
                 <div className="flex items-center gap-10">

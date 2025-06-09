@@ -213,8 +213,8 @@ const Categeories = () => {
           </div>
         </section>
 
-        <div className="absolute bottom-[0px]">
-          <img src={GRASS} alt="GRASS" className="" />
+        <div className="absolute bottom-[0px] w-full">
+          <img src={GRASS} alt="GRASS" className="w-full" />
         </div>
       </div>
 
